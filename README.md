@@ -108,3 +108,10 @@ python3 sync_prices.py
 ```bash
 python3 sync_prices.py
 ```
+
+## MCP Server / MCP 服务
+
+This dataset is also exposed as a remote **MCP server** so AI agents can query live pricing and estimate token costs directly:
+
+- Endpoint: `https://llmabacus.com/api/mcp`
+- Tools: `query_model_price(model)`, `estimate_cost(text_or_tokens, model)`
