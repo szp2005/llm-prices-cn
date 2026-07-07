@@ -113,5 +113,5 @@ python3 sync_prices.py
 
 This dataset is also exposed as a remote **MCP server** so AI agents can query live pricing and estimate token costs directly:
 
-- Endpoint: `https://llmabacus.com/api/mcp`
+- Endpoint: `https://www.llmabacus.com/api/mcp/mcp`
 - Tools: `query_model_price(model)`, `estimate_cost(text_or_tokens, model)`
