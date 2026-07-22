@@ -115,3 +115,16 @@ This dataset is also exposed as a remote **MCP server** so AI agents can query l
 
 - Endpoint: `https://www.llmabacus.com/api/mcp/mcp`
 - Tools: `query_model_price(model)`, `estimate_cost(text_or_tokens, model)`
+
+### Self-host (stdio, Docker) / 自托管
+
+You can also run this dataset as a **local stdio MCP server** — it reads the bundled `prices.json`, needs no network, and works offline:
+
+```bash
+docker build -t llm-prices-mcp .
+docker run -i --rm llm-prices-mcp          # stdio MCP server
+# or, without Docker:
+pip install -r requirements.txt && python server.py
+```
+
+Tools: `list_llm_prices(vendor?, currency?)`, `estimate_cost(model_id, input_tokens, output_tokens, currency?)`.
