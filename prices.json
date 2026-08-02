@@ -1,11 +1,1622 @@
 {
-  "last_updated": "2026-07-03",
-  "usd_to_cny_rate": 6.7855,
-  "usd_to_cny_updated": "2026-07-06",
+  "last_checked": "2026-08-01",
+  "last_updated": "2026-08-01",
+  "usd_to_cny_rate": 6.7649,
+  "usd_to_cny_updated": "2026-08-01",
   "pricing_unit": "per_million_tokens",
+  "model_count": 55,
   "license": "CC-BY-4.0",
-  "source": "https://llmabacus.com",
+  "source": "https://www.llmabacus.com",
+  "api": "https://www.llmabacus.com/api/prices",
   "models": [
+    {
+      "id": "qwen3-5-flash",
+      "name": "Qwen3.5 Flash",
+      "vendor_id": "alibaba",
+      "vendor_name": "阿里通义",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 0.2,
+      "output_price_cny_per_m": 2,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 0.2,
+      "output_price_orig_per_m": 2,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 1000000,
+      "max_output": 16000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "极便宜",
+        "快速"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "last_verified": "2026-08-01",
+      "price_tiers": [
+        {
+          "up_to_input_tokens": 128000,
+          "input_price_cny_per_m": 0.2,
+          "output_price_cny_per_m": 2,
+          "cached_input_price_cny_per_m": null,
+          "input_price_orig_per_m": 0.2,
+          "output_price_orig_per_m": 2,
+          "cached_input_price_orig_per_m": null
+        },
+        {
+          "up_to_input_tokens": 256000,
+          "input_price_cny_per_m": 0.8,
+          "output_price_cny_per_m": 8,
+          "cached_input_price_cny_per_m": null,
+          "input_price_orig_per_m": 0.8,
+          "output_price_orig_per_m": 8,
+          "cached_input_price_orig_per_m": null
+        },
+        {
+          "up_to_input_tokens": null,
+          "input_price_cny_per_m": 1.2,
+          "output_price_cny_per_m": 12,
+          "cached_input_price_cny_per_m": null,
+          "input_price_orig_per_m": 1.2,
+          "output_price_orig_per_m": 12,
+          "cached_input_price_orig_per_m": null
+        }
+      ],
+      "price_tiers_source": "https://help.aliyun.com/zh/model-studio/model-pricing（官方页直读 2026-07-31）",
+      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
+    },
+    {
+      "id": "gemini-2-5-flash-lite",
+      "name": "Gemini 2.5 Flash-Lite",
+      "vendor_id": "google",
+      "vendor_name": "Google",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 0.6765,
+      "output_price_cny_per_m": 2.706,
+      "cached_input_price_cny_per_m": 0.0676,
+      "input_price_orig_per_m": 0.1,
+      "output_price_orig_per_m": 0.4,
+      "cached_input_price_orig_per_m": 0.01,
+      "context_window": 1000000,
+      "max_output": 64000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "极便宜",
+        "快速"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "qwen3-5-plus",
+      "name": "Qwen3.5 Plus",
+      "vendor_id": "alibaba",
+      "vendor_name": "阿里通义",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 0.8,
+      "output_price_cny_per_m": 4.8,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 0.8,
+      "output_price_orig_per_m": 4.8,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 1000000,
+      "max_output": 32000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "性价比",
+        "新发布"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "last_verified": "2026-08-01",
+      "price_tiers": [
+        {
+          "up_to_input_tokens": 128000,
+          "input_price_cny_per_m": 0.8,
+          "output_price_cny_per_m": 4.8,
+          "cached_input_price_cny_per_m": null,
+          "input_price_orig_per_m": 0.8,
+          "output_price_orig_per_m": 4.8,
+          "cached_input_price_orig_per_m": null
+        },
+        {
+          "up_to_input_tokens": 256000,
+          "input_price_cny_per_m": 2,
+          "output_price_cny_per_m": 12,
+          "cached_input_price_cny_per_m": null,
+          "input_price_orig_per_m": 2,
+          "output_price_orig_per_m": 12,
+          "cached_input_price_orig_per_m": null
+        },
+        {
+          "up_to_input_tokens": null,
+          "input_price_cny_per_m": 4,
+          "output_price_cny_per_m": 24,
+          "cached_input_price_cny_per_m": null,
+          "input_price_orig_per_m": 4,
+          "output_price_orig_per_m": 24,
+          "cached_input_price_orig_per_m": null
+        }
+      ],
+      "price_tiers_source": "https://help.aliyun.com/zh/model-studio/model-pricing（官方页直读 2026-07-31）",
+      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
+    },
+    {
+      "id": "doubao-1-5-pro",
+      "name": "Doubao 1.5 Pro",
+      "vendor_id": "bytedance",
+      "vendor_name": "字节豆包",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 0.8,
+      "output_price_cny_per_m": 2,
+      "cached_input_price_cny_per_m": 0.16,
+      "input_price_orig_per_m": 0.8,
+      "output_price_orig_per_m": 2,
+      "cached_input_price_orig_per_m": 0.16,
+      "context_window": 256000,
+      "max_output": 12288,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "极便宜",
+        "上代"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://www.volcengine.com/docs/82379/1544106",
+      "last_verified": "2026-07-03"
+    },
+    {
+      "id": "ernie-4-5-turbo",
+      "name": "文心 ERNIE 4.5 Turbo",
+      "vendor_id": "baidu",
+      "vendor_name": "百度文心",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 0.8,
+      "output_price_cny_per_m": 3.2,
+      "cached_input_price_cny_per_m": 0.2,
+      "input_price_orig_per_m": 0.8,
+      "output_price_orig_per_m": 3.2,
+      "cached_input_price_orig_per_m": 0.2,
+      "context_window": 128000,
+      "max_output": 16384,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "性价比",
+        "快速"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "hunyuan-turbos",
+      "name": "混元 TurboS",
+      "vendor_id": "tencent",
+      "vendor_name": "腾讯混元",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 0.8,
+      "output_price_cny_per_m": 2,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 0.8,
+      "output_price_orig_per_m": 2,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 256000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "性价比",
+        "快速"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://cloud.tencent.com/document/product/1729/97731",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "deepseek-v4-flash",
+      "name": "DeepSeek V4 Flash",
+      "vendor_id": "deepseek",
+      "vendor_name": "DeepSeek",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 1,
+      "output_price_cny_per_m": 2,
+      "cached_input_price_cny_per_m": 0.02,
+      "input_price_orig_per_m": 1,
+      "output_price_orig_per_m": 2,
+      "cached_input_price_orig_per_m": 0.02,
+      "context_window": 1000000,
+      "max_output": 384000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "国产之光",
+        "极便宜",
+        "长上下文"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 47,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "ernie-x1-turbo",
+      "name": "文心 ERNIE X1 Turbo",
+      "vendor_id": "baidu",
+      "vendor_name": "百度文心",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 1,
+      "output_price_cny_per_m": 4,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 1,
+      "output_price_orig_per_m": 4,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 128000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "推理",
+        "深度思考"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "hunyuan-t1",
+      "name": "混元 T1",
+      "vendor_id": "tencent",
+      "vendor_name": "腾讯混元",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 1,
+      "output_price_cny_per_m": 4,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 1,
+      "output_price_orig_per_m": 4,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 64000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "推理"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://cloud.tencent.com/document/product/1729/97731",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "mimo-v2-5",
+      "name": "MiMo-V2.5",
+      "vendor_id": "xiaomi",
+      "vendor_name": "小米 MiMo",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 1,
+      "output_price_cny_per_m": 2,
+      "cached_input_price_cny_per_m": 0.02,
+      "input_price_orig_per_m": 1,
+      "output_price_orig_per_m": 2,
+      "cached_input_price_orig_per_m": 0.02,
+      "context_window": 262144,
+      "max_output": 32000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "高性价比"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://mimo.mi.com/docs/zh-CN/price/pay-as-you-go",
+      "last_verified": "2026-07-31"
+    },
+    {
+      "id": "hunyuan-hy3",
+      "name": "混元 Hy3",
+      "vendor_id": "tencent",
+      "vendor_name": "腾讯混元",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 1,
+      "output_price_cny_per_m": 4,
+      "cached_input_price_cny_per_m": 0.25,
+      "input_price_orig_per_m": 1,
+      "output_price_orig_per_m": 4,
+      "cached_input_price_orig_per_m": 0.25,
+      "context_window": 262144,
+      "max_output": 32000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "高性价比",
+        "Agent"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://cloud.tencent.com/document/product/1729/97731",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "step-3-7-flash",
+      "name": "Step 3.7 Flash",
+      "vendor_id": "stepfun",
+      "vendor_name": "阶跃星辰",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 1.35,
+      "output_price_cny_per_m": 8.1,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 1.35,
+      "output_price_orig_per_m": 8.1,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 131072,
+      "max_output": 32000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "高性价比"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://platform.stepfun.com",
+      "last_verified": "2026-07-31"
+    },
+    {
+      "id": "gpt-5-6-luna",
+      "name": "GPT-5.6 Luna",
+      "vendor_id": "openai",
+      "vendor_name": "OpenAI",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 1.353,
+      "output_price_cny_per_m": 8.1179,
+      "cached_input_price_cny_per_m": 0.1353,
+      "input_price_orig_per_m": 0.2,
+      "output_price_orig_per_m": 1.2,
+      "cached_input_price_orig_per_m": 0.02,
+      "context_window": 1050000,
+      "max_output": 128000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "快速",
+        "极便宜"
+      ],
+      "retired": false,
+      "knowledge_cutoff": "2026-02",
+      "quality_score": null,
+      "source": "https://openai.com/api/pricing/",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "gemini-3-1-flash-lite",
+      "name": "Gemini 3.1 Flash-Lite",
+      "vendor_id": "google",
+      "vendor_name": "Google",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 1.6912,
+      "output_price_cny_per_m": 10.1474,
+      "cached_input_price_cny_per_m": 0.1691,
+      "input_price_orig_per_m": 0.25,
+      "output_price_orig_per_m": 1.5,
+      "cached_input_price_orig_per_m": 0.025,
+      "context_window": 1000000,
+      "max_output": 64000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "极便宜",
+        "快速"
+      ],
+      "retired": false,
+      "knowledge_cutoff": "2025-01",
+      "quality_score": 34,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "deepseek-v3-2-legacy",
+      "name": "DeepSeek V3.2",
+      "vendor_id": "deepseek",
+      "vendor_name": "DeepSeek",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 2,
+      "output_price_cny_per_m": 8,
+      "cached_input_price_cny_per_m": 0.5,
+      "input_price_orig_per_m": 2,
+      "output_price_orig_per_m": 8,
+      "cached_input_price_orig_per_m": 0.5,
+      "context_window": 128000,
+      "max_output": 8192,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "已下线（官方）",
+        "2026-07-24 已下线"
+      ],
+      "retired": true,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "glm-4-7",
+      "name": "GLM-4.7",
+      "vendor_id": "zhipu",
+      "vendor_name": "智谱 AI",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 2,
+      "output_price_cny_per_m": 8,
+      "cached_input_price_cny_per_m": 0.4,
+      "input_price_orig_per_m": 2,
+      "output_price_orig_per_m": 8,
+      "cached_input_price_orig_per_m": 0.4,
+      "context_window": 200000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "性价比"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://open.bigmodel.cn/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "spark-x2-flash",
+      "name": "Spark X2 Flash",
+      "vendor_id": "xfyun",
+      "vendor_name": "讯飞星火",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 2,
+      "output_price_cny_per_m": 2,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 2,
+      "output_price_orig_per_m": 2,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 200000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "推理",
+        "快速",
+        "性价比"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://xinghuo.xfyun.cn/sparkapi",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "spark-ultra",
+      "name": "Spark Ultra",
+      "vendor_id": "xfyun",
+      "vendor_name": "讯飞星火",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 2,
+      "output_price_cny_per_m": 2,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 2,
+      "output_price_orig_per_m": 2,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 128000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "性价比",
+        "FunctionCall"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://xinghuo.xfyun.cn/sparkapi",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "baichuan-m2",
+      "name": "Baichuan M2",
+      "vendor_id": "baichuan",
+      "vendor_name": "百川智能",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 2,
+      "output_price_cny_per_m": 20,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 2,
+      "output_price_orig_per_m": 20,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 192000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "性价比"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://platform.baichuan-ai.com/prices",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "gemini-2-5-flash",
+      "name": "Gemini 2.5 Flash",
+      "vendor_id": "google",
+      "vendor_name": "Google",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 2.0295,
+      "output_price_cny_per_m": 16.9123,
+      "cached_input_price_cny_per_m": 0.2029,
+      "input_price_orig_per_m": 0.3,
+      "output_price_orig_per_m": 2.5,
+      "cached_input_price_orig_per_m": 0.03,
+      "context_window": 1000000,
+      "max_output": 64000,
+      "modality": [
+        "text",
+        "vision",
+        "audio"
+      ],
+      "tags": [
+        "快速",
+        "性价比"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "minimax-m2-7",
+      "name": "MiniMax M2.7",
+      "vendor_id": "minimax",
+      "vendor_name": "MiniMax",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 2.1,
+      "output_price_cny_per_m": 8.4,
+      "cached_input_price_cny_per_m": 0.42,
+      "input_price_orig_per_m": 2.1,
+      "output_price_orig_per_m": 8.4,
+      "cached_input_price_orig_per_m": 0.42,
+      "context_window": 1000000,
+      "max_output": 64000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "Agent",
+        "代码",
+        "性价比"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 50,
+      "source": "https://platform.minimaxi.com/docs/pricing/overview",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "doubao-1-6",
+      "name": "Doubao 1.6",
+      "vendor_id": "bytedance",
+      "vendor_name": "字节豆包",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 2.4,
+      "output_price_cny_per_m": 24,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 2.4,
+      "output_price_orig_per_m": 24,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 256000,
+      "max_output": 16000,
+      "modality": [
+        "text",
+        "vision",
+        "audio"
+      ],
+      "tags": [
+        "多模态",
+        "上代"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://www.volcengine.com/docs/82379/1544106",
+      "last_verified": "2026-07-03"
+    },
+    {
+      "id": "qwen3-max",
+      "name": "Qwen3 Max",
+      "vendor_id": "alibaba",
+      "vendor_name": "阿里通义",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 2.5,
+      "output_price_cny_per_m": 10,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 2.5,
+      "output_price_orig_per_m": 10,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 256000,
+      "max_output": 32000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "性价比"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "last_verified": "2026-08-01",
+      "price_tiers": [
+        {
+          "up_to_input_tokens": 32000,
+          "input_price_cny_per_m": 2.5,
+          "output_price_cny_per_m": 10,
+          "cached_input_price_cny_per_m": null,
+          "input_price_orig_per_m": 2.5,
+          "output_price_orig_per_m": 10,
+          "cached_input_price_orig_per_m": null
+        },
+        {
+          "up_to_input_tokens": 128000,
+          "input_price_cny_per_m": 4,
+          "output_price_cny_per_m": 16,
+          "cached_input_price_cny_per_m": null,
+          "input_price_orig_per_m": 4,
+          "output_price_orig_per_m": 16,
+          "cached_input_price_orig_per_m": null
+        },
+        {
+          "up_to_input_tokens": null,
+          "input_price_cny_per_m": 7,
+          "output_price_cny_per_m": 28,
+          "cached_input_price_cny_per_m": null,
+          "input_price_orig_per_m": 7,
+          "output_price_orig_per_m": 28,
+          "cached_input_price_orig_per_m": null
+        }
+      ],
+      "price_tiers_source": "https://help.aliyun.com/zh/model-studio/model-pricing（官方页直读 2026-07-31）",
+      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
+      "vendor_id": "deepseek",
+      "vendor_name": "DeepSeek",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 3,
+      "output_price_cny_per_m": 6,
+      "cached_input_price_cny_per_m": 0.025,
+      "input_price_orig_per_m": 3,
+      "output_price_orig_per_m": 6,
+      "cached_input_price_orig_per_m": 0.025,
+      "context_window": 1000000,
+      "max_output": 384000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "旗舰",
+        "推理",
+        "长上下文"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 52,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "spark-x2",
+      "name": "Spark X2",
+      "vendor_id": "xfyun",
+      "vendor_name": "讯飞星火",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 3,
+      "output_price_cny_per_m": 3,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 3,
+      "output_price_orig_per_m": 3,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 200000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "旗舰",
+        "推理"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://xinghuo.xfyun.cn/sparkapi",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "hunyuan-2-0-think",
+      "name": "混元 2.0 Think",
+      "vendor_id": "tencent",
+      "vendor_name": "腾讯混元",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 3.975,
+      "output_price_cny_per_m": 15.9,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 3.975,
+      "output_price_orig_per_m": 15.9,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 128000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "旗舰",
+        "推理"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://cloud.tencent.com/document/product/1729/97731",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "glm-5",
+      "name": "GLM-5",
+      "vendor_id": "zhipu",
+      "vendor_name": "智谱 AI",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 4,
+      "output_price_cny_per_m": 18,
+      "cached_input_price_cny_per_m": 1,
+      "input_price_orig_per_m": 4,
+      "output_price_orig_per_m": 18,
+      "cached_input_price_orig_per_m": 1,
+      "context_window": 200000,
+      "max_output": 16384,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "旗舰"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://open.bigmodel.cn/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "ernie-5-1",
+      "name": "文心 ERNIE 5.1",
+      "vendor_id": "baidu",
+      "vendor_name": "百度文心",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 4,
+      "output_price_cny_per_m": 18,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 4,
+      "output_price_orig_per_m": 18,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 128000,
+      "max_output": 16384,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "旗舰"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "minimax-m3",
+      "name": "MiniMax M3",
+      "vendor_id": "minimax",
+      "vendor_name": "MiniMax",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 4.2,
+      "output_price_cny_per_m": 16.8,
+      "cached_input_price_cny_per_m": 0.84,
+      "input_price_orig_per_m": 4.2,
+      "output_price_orig_per_m": 16.8,
+      "cached_input_price_orig_per_m": 0.84,
+      "context_window": 1000000,
+      "max_output": 64000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "Agent",
+        "代码",
+        "长上下文",
+        "旗舰"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 55,
+      "source": "https://platform.minimaxi.com/docs/pricing/overview",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "baichuan-m3-plus",
+      "name": "Baichuan M3 Plus",
+      "vendor_id": "baichuan",
+      "vendor_name": "百川智能",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 5,
+      "output_price_cny_per_m": 9,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 5,
+      "output_price_orig_per_m": 9,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 192000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "医疗",
+        "旗舰"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://platform.baichuan-ai.com/prices",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "glm-5-1",
+      "name": "GLM-5.1",
+      "vendor_id": "zhipu",
+      "vendor_name": "智谱 AI",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 6,
+      "output_price_cny_per_m": 24,
+      "cached_input_price_cny_per_m": 1.3,
+      "input_price_orig_per_m": 6,
+      "output_price_orig_per_m": 24,
+      "cached_input_price_orig_per_m": 1.3,
+      "context_window": 200000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "旗舰",
+        "推理",
+        "新发布"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 51,
+      "source": "https://open.bigmodel.cn/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "doubao-seed-2-1-pro",
+      "name": "Doubao Seed 2.1 Pro",
+      "vendor_id": "bytedance",
+      "vendor_name": "字节豆包",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 6,
+      "output_price_cny_per_m": 30,
+      "cached_input_price_cny_per_m": 1.2,
+      "input_price_orig_per_m": 6,
+      "output_price_orig_per_m": 30,
+      "cached_input_price_orig_per_m": 1.2,
+      "context_window": 256000,
+      "max_output": 32000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "旗舰",
+        "推理",
+        "新发布"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://www.volcengine.com/docs/82379/1544106",
+      "last_verified": "2026-07-03"
+    },
+    {
+      "id": "kimi-k2-6",
+      "name": "Kimi K2.6",
+      "vendor_id": "moonshot",
+      "vendor_name": "Moonshot / Kimi",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 6.5,
+      "output_price_cny_per_m": 27,
+      "cached_input_price_cny_per_m": 1.1,
+      "input_price_orig_per_m": 6.5,
+      "output_price_orig_per_m": 27,
+      "cached_input_price_orig_per_m": 1.1,
+      "context_window": 262144,
+      "max_output": 32000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "旗舰",
+        "长上下文",
+        "Agent"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 54,
+      "source": "https://platform.moonshot.cn/docs/pricing/chat",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "name": "Claude Haiku 4.5",
+      "vendor_id": "anthropic",
+      "vendor_name": "Anthropic",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 6.7649,
+      "output_price_cny_per_m": 33.8245,
+      "cached_input_price_cny_per_m": 0.6765,
+      "input_price_orig_per_m": 1,
+      "output_price_orig_per_m": 5,
+      "cached_input_price_orig_per_m": 0.1,
+      "context_window": 200000,
+      "max_output": 32000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "快速"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 37,
+      "source": "https://claude.com/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "grok-build-0-1",
+      "name": "Grok Build 0.1",
+      "vendor_id": "xai",
+      "vendor_name": "xAI",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 6.7649,
+      "output_price_cny_per_m": 13.5298,
+      "cached_input_price_cny_per_m": 1.353,
+      "input_price_orig_per_m": 1,
+      "output_price_orig_per_m": 2,
+      "cached_input_price_orig_per_m": 0.2,
+      "context_window": 256000,
+      "max_output": 64000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "代码",
+        "快速"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://docs.x.ai/developers/models",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "spark-pro",
+      "name": "Spark Pro",
+      "vendor_id": "xfyun",
+      "vendor_name": "讯飞星火",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 7,
+      "output_price_cny_per_m": 7,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 7,
+      "output_price_orig_per_m": 7,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 128000,
+      "max_output": 16384,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "强性能"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://xinghuo.xfyun.cn/sparkapi",
+      "last_verified": "2026-06-05"
+    },
+    {
+      "id": "glm-5-2",
+      "name": "GLM-5.2",
+      "vendor_id": "zhipu",
+      "vendor_name": "智谱 AI",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 8,
+      "output_price_cny_per_m": 28,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 8,
+      "output_price_orig_per_m": 28,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 1000000,
+      "max_output": 128000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "旗舰",
+        "推理"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://open.bigmodel.cn/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "gpt-5-1",
+      "name": "GPT-5.1",
+      "vendor_id": "openai",
+      "vendor_name": "OpenAI",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 8.4561,
+      "output_price_cny_per_m": 67.649,
+      "cached_input_price_cny_per_m": 0.8456,
+      "input_price_orig_per_m": 1.25,
+      "output_price_orig_per_m": 10,
+      "cached_input_price_orig_per_m": 0.125,
+      "context_window": 400000,
+      "max_output": 128000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "快速"
+      ],
+      "retired": false,
+      "knowledge_cutoff": "2024-09",
+      "quality_score": null,
+      "source": "https://openai.com/api/pricing/",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "gemini-2-5-pro",
+      "name": "Gemini 2.5 Pro",
+      "vendor_id": "google",
+      "vendor_name": "Google",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 8.4561,
+      "output_price_cny_per_m": 67.649,
+      "cached_input_price_cny_per_m": 0.8456,
+      "input_price_orig_per_m": 1.25,
+      "output_price_orig_per_m": 10,
+      "cached_input_price_orig_per_m": 0.125,
+      "context_window": 2000000,
+      "max_output": 64000,
+      "modality": [
+        "text",
+        "vision",
+        "audio"
+      ],
+      "tags": [
+        "长上下文"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 35,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "last_verified": "2026-08-01",
+      "price_tiers": [
+        {
+          "up_to_input_tokens": 200000,
+          "input_price_cny_per_m": 8.4561,
+          "output_price_cny_per_m": 67.649,
+          "cached_input_price_cny_per_m": 0.8456,
+          "input_price_orig_per_m": 1.25,
+          "output_price_orig_per_m": 10,
+          "cached_input_price_orig_per_m": 0.125
+        },
+        {
+          "up_to_input_tokens": null,
+          "input_price_cny_per_m": 16.9123,
+          "output_price_cny_per_m": 101.4735,
+          "cached_input_price_cny_per_m": 1.6912,
+          "input_price_orig_per_m": 2.5,
+          "output_price_orig_per_m": 15,
+          "cached_input_price_orig_per_m": 0.25
+        }
+      ],
+      "price_tiers_source": "https://ai.google.dev/gemini-api/docs/pricing（经 LiteLLM model_prices 数据集核对 2026-07-31）",
+      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
+    },
+    {
+      "id": "grok-4-3",
+      "name": "Grok 4.3",
+      "vendor_id": "xai",
+      "vendor_name": "xAI",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 8.4561,
+      "output_price_cny_per_m": 16.9123,
+      "cached_input_price_cny_per_m": 1.353,
+      "input_price_orig_per_m": 1.25,
+      "output_price_orig_per_m": 2.5,
+      "cached_input_price_orig_per_m": 0.2,
+      "context_window": 1000000,
+      "max_output": 64000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "旗舰",
+        "推理"
+      ],
+      "retired": false,
+      "knowledge_cutoff": "2024-11",
+      "quality_score": 53,
+      "source": "https://docs.x.ai/developers/models",
+      "last_verified": "2026-08-01",
+      "price_tiers": [
+        {
+          "up_to_input_tokens": 200000,
+          "input_price_cny_per_m": 8.4561,
+          "output_price_cny_per_m": 16.9123,
+          "cached_input_price_cny_per_m": 1.353,
+          "input_price_orig_per_m": 1.25,
+          "output_price_orig_per_m": 2.5,
+          "cached_input_price_orig_per_m": 0.2
+        },
+        {
+          "up_to_input_tokens": null,
+          "input_price_cny_per_m": 16.9123,
+          "output_price_cny_per_m": 33.8245,
+          "cached_input_price_cny_per_m": 2.706,
+          "input_price_orig_per_m": 2.5,
+          "output_price_orig_per_m": 5,
+          "cached_input_price_orig_per_m": 0.4
+        }
+      ],
+      "price_tiers_source": "https://docs.x.ai/docs/models（经 LiteLLM model_prices 数据集核对 2026-07-31）",
+      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
+    },
+    {
+      "id": "gemini-3-6-flash",
+      "name": "Gemini 3.6 Flash",
+      "vendor_id": "google",
+      "vendor_name": "Google",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 10.1474,
+      "output_price_cny_per_m": 50.7368,
+      "cached_input_price_cny_per_m": 1.0147,
+      "input_price_orig_per_m": 1.5,
+      "output_price_orig_per_m": 7.5,
+      "cached_input_price_orig_per_m": 0.15,
+      "context_window": 1000000,
+      "max_output": 65536,
+      "modality": [
+        "text",
+        "vision",
+        "audio"
+      ],
+      "tags": [
+        "快速",
+        "多模态"
+      ],
+      "retired": false,
+      "knowledge_cutoff": "2026-03",
+      "quality_score": null,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "gemini-3-5-flash",
+      "name": "Gemini 3.5 Flash",
+      "vendor_id": "google",
+      "vendor_name": "Google",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 10.1474,
+      "output_price_cny_per_m": 60.8841,
+      "cached_input_price_cny_per_m": 1.0147,
+      "input_price_orig_per_m": 1.5,
+      "output_price_orig_per_m": 9,
+      "cached_input_price_orig_per_m": 0.15,
+      "context_window": 1000000,
+      "max_output": 64000,
+      "modality": [
+        "text",
+        "vision",
+        "audio"
+      ],
+      "tags": [
+        "快速",
+        "多模态",
+        "上代"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 55,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "qwen3-7-max",
+      "name": "Qwen3.7 Max",
+      "vendor_id": "alibaba",
+      "vendor_name": "阿里通义",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 12,
+      "output_price_cny_per_m": 36,
+      "cached_input_price_cny_per_m": null,
+      "input_price_orig_per_m": 12,
+      "output_price_orig_per_m": 36,
+      "cached_input_price_orig_per_m": null,
+      "context_window": 1000000,
+      "max_output": 32000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "旗舰",
+        "Agent",
+        "长上下文",
+        "新发布"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 57,
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "gpt-5-6-terra",
+      "name": "GPT-5.6 Terra",
+      "vendor_id": "openai",
+      "vendor_name": "OpenAI",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 13.5298,
+      "output_price_cny_per_m": 81.1788,
+      "cached_input_price_cny_per_m": 1.353,
+      "input_price_orig_per_m": 2,
+      "output_price_orig_per_m": 12,
+      "cached_input_price_orig_per_m": 0.2,
+      "context_window": 1050000,
+      "max_output": 128000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "性价比"
+      ],
+      "retired": false,
+      "knowledge_cutoff": "2026-02",
+      "quality_score": null,
+      "source": "https://openai.com/api/pricing/",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "vendor_id": "anthropic",
+      "vendor_name": "Anthropic",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 13.5298,
+      "output_price_cny_per_m": 67.649,
+      "cached_input_price_cny_per_m": 1.353,
+      "input_price_orig_per_m": 2,
+      "output_price_orig_per_m": 10,
+      "cached_input_price_orig_per_m": 0.2,
+      "context_window": 1000000,
+      "max_output": 128000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "性价比",
+        "代码",
+        "长上下文"
+      ],
+      "retired": false,
+      "knowledge_cutoff": "2026-01",
+      "quality_score": 57,
+      "source": "https://claude.com/pricing",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "gemini-3-1-pro-preview",
+      "name": "Gemini 3.1 Pro Preview",
+      "vendor_id": "google",
+      "vendor_name": "Google",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 13.5298,
+      "output_price_cny_per_m": 81.1788,
+      "cached_input_price_cny_per_m": 1.353,
+      "input_price_orig_per_m": 2,
+      "output_price_orig_per_m": 12,
+      "cached_input_price_orig_per_m": 0.2,
+      "context_window": 2000000,
+      "max_output": 64000,
+      "modality": [
+        "text",
+        "vision",
+        "audio"
+      ],
+      "tags": [
+        "旗舰",
+        "长上下文",
+        "多模态"
+      ],
+      "retired": false,
+      "knowledge_cutoff": "2025-01",
+      "quality_score": 57,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "last_verified": "2026-08-01",
+      "price_tiers": [
+        {
+          "up_to_input_tokens": 200000,
+          "input_price_cny_per_m": 13.5298,
+          "output_price_cny_per_m": 81.1788,
+          "cached_input_price_cny_per_m": 1.353,
+          "input_price_orig_per_m": 2,
+          "output_price_orig_per_m": 12,
+          "cached_input_price_orig_per_m": 0.2
+        },
+        {
+          "up_to_input_tokens": null,
+          "input_price_cny_per_m": 27.0596,
+          "output_price_cny_per_m": 121.7682,
+          "cached_input_price_cny_per_m": 2.706,
+          "input_price_orig_per_m": 4,
+          "output_price_orig_per_m": 18,
+          "cached_input_price_orig_per_m": 0.4
+        }
+      ],
+      "price_tiers_source": "https://ai.google.dev/gemini-api/docs/pricing（经 LiteLLM model_prices 数据集核对 2026-07-31）",
+      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
+    },
+    {
+      "id": "gpt-5-4",
+      "name": "GPT-5.4",
+      "vendor_id": "openai",
+      "vendor_name": "OpenAI",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 16.9123,
+      "output_price_cny_per_m": 101.4735,
+      "cached_input_price_cny_per_m": 1.6912,
+      "input_price_orig_per_m": 2.5,
+      "output_price_orig_per_m": 15,
+      "cached_input_price_orig_per_m": 0.25,
+      "context_window": 400000,
+      "max_output": 128000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "性价比"
+      ],
+      "retired": false,
+      "knowledge_cutoff": "2025-08",
+      "quality_score": null,
+      "source": "https://openai.com/api/pricing/",
+      "last_verified": "2026-08-01",
+      "price_tiers": [
+        {
+          "up_to_input_tokens": 272000,
+          "input_price_cny_per_m": 16.9123,
+          "output_price_cny_per_m": 101.4735,
+          "cached_input_price_cny_per_m": 1.6912,
+          "input_price_orig_per_m": 2.5,
+          "output_price_orig_per_m": 15,
+          "cached_input_price_orig_per_m": 0.25
+        },
+        {
+          "up_to_input_tokens": null,
+          "input_price_cny_per_m": 33.8245,
+          "output_price_cny_per_m": 152.2103,
+          "cached_input_price_cny_per_m": 3.3825,
+          "input_price_orig_per_m": 5,
+          "output_price_orig_per_m": 22.5,
+          "cached_input_price_orig_per_m": 0.5
+        }
+      ],
+      "price_tiers_source": "https://platform.openai.com/docs/pricing（经 LiteLLM model_prices 数据集核对 2026-07-31）",
+      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "vendor_id": "moonshot",
+      "vendor_name": "Moonshot / Kimi",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 20,
+      "output_price_cny_per_m": 100,
+      "cached_input_price_cny_per_m": 2,
+      "input_price_orig_per_m": 20,
+      "output_price_orig_per_m": 100,
+      "cached_input_price_orig_per_m": 2,
+      "context_window": 1048576,
+      "max_output": 32000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "旗舰",
+        "长上下文",
+        "推理"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": null,
+      "source": "https://platform.moonshot.cn/docs/pricing/chat",
+      "last_verified": "2026-08-01"
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "vendor_id": "anthropic",
+      "vendor_name": "Anthropic",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 20.2947,
+      "output_price_cny_per_m": 101.4735,
+      "cached_input_price_cny_per_m": 2.0295,
+      "input_price_orig_per_m": 3,
+      "output_price_orig_per_m": 15,
+      "cached_input_price_orig_per_m": 0.3,
+      "context_window": 1000000,
+      "max_output": 64000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "性价比",
+        "长上下文",
+        "代码"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 52,
+      "source": "https://claude.com/pricing",
+      "last_verified": "2026-08-01",
+      "price_tiers": [
+        {
+          "up_to_input_tokens": 200000,
+          "input_price_cny_per_m": 20.2947,
+          "output_price_cny_per_m": 101.4735,
+          "cached_input_price_cny_per_m": 2.0295,
+          "input_price_orig_per_m": 3,
+          "output_price_orig_per_m": 15,
+          "cached_input_price_orig_per_m": 0.3
+        },
+        {
+          "up_to_input_tokens": null,
+          "input_price_cny_per_m": 40.5894,
+          "output_price_cny_per_m": 152.2103,
+          "cached_input_price_cny_per_m": 4.0589,
+          "input_price_orig_per_m": 6,
+          "output_price_orig_per_m": 22.5,
+          "cached_input_price_orig_per_m": 0.6
+        }
+      ],
+      "price_tiers_source": "https://docs.claude.com/en/docs/about-claude/pricing（经 LiteLLM model_prices 数据集核对 2026-07-31）",
+      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
+    },
     {
       "id": "gpt-5-5",
       "name": "GPT-5.5",
@@ -13,12 +1624,12 @@
       "vendor_name": "OpenAI",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_usd_per_m": 5.0,
-      "output_price_usd_per_m": 30.0,
-      "input_price_cny_per_m": 33.9275,
-      "output_price_cny_per_m": 203.565,
-      "cached_input_price_usd_per_m": 0.5,
-      "cached_input_price_cny_per_m": 3.3927,
+      "input_price_cny_per_m": 33.8245,
+      "output_price_cny_per_m": 202.947,
+      "cached_input_price_cny_per_m": 3.3825,
+      "input_price_orig_per_m": 5,
+      "output_price_orig_per_m": 30,
+      "cached_input_price_orig_per_m": 0.5,
       "context_window": 400000,
       "max_output": 128000,
       "modality": [
@@ -29,56 +1640,84 @@
         "旗舰",
         "推理"
       ],
+      "retired": false,
       "knowledge_cutoff": "2025-12",
-      "quality_score": 60
+      "quality_score": 60,
+      "source": "https://openai.com/api/pricing/",
+      "last_verified": "2026-08-01",
+      "price_tiers": [
+        {
+          "up_to_input_tokens": 272000,
+          "input_price_cny_per_m": 33.8245,
+          "output_price_cny_per_m": 202.947,
+          "cached_input_price_cny_per_m": 3.3825,
+          "input_price_orig_per_m": 5,
+          "output_price_orig_per_m": 30,
+          "cached_input_price_orig_per_m": 0.5
+        },
+        {
+          "up_to_input_tokens": null,
+          "input_price_cny_per_m": 67.649,
+          "output_price_cny_per_m": 304.4205,
+          "cached_input_price_cny_per_m": 6.7649,
+          "input_price_orig_per_m": 10,
+          "output_price_orig_per_m": 45,
+          "cached_input_price_orig_per_m": 1
+        }
+      ],
+      "price_tiers_source": "https://platform.openai.com/docs/pricing（经 LiteLLM model_prices 数据集核对 2026-07-31）",
+      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
     },
     {
-      "id": "gpt-5-4",
-      "name": "GPT-5.4",
+      "id": "gpt-5-6-sol",
+      "name": "GPT-5.6 Sol",
       "vendor_id": "openai",
       "vendor_name": "OpenAI",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_usd_per_m": 2.5,
-      "output_price_usd_per_m": 15.0,
-      "input_price_cny_per_m": 16.9638,
-      "output_price_cny_per_m": 101.7825,
-      "cached_input_price_usd_per_m": 0.25,
-      "cached_input_price_cny_per_m": 1.6964,
-      "context_window": 400000,
+      "input_price_cny_per_m": 33.8245,
+      "output_price_cny_per_m": 202.947,
+      "cached_input_price_cny_per_m": 3.3825,
+      "input_price_orig_per_m": 5,
+      "output_price_orig_per_m": 30,
+      "cached_input_price_orig_per_m": 0.5,
+      "context_window": 1050000,
       "max_output": 128000,
       "modality": [
         "text",
         "vision"
       ],
       "tags": [
-        "性价比"
+        "旗舰",
+        "推理"
       ],
-      "knowledge_cutoff": "2025-08"
-    },
-    {
-      "id": "gpt-5-1",
-      "name": "GPT-5.1",
-      "vendor_id": "openai",
-      "vendor_name": "OpenAI",
-      "country": "US",
-      "billing_currency": "USD",
-      "input_price_usd_per_m": 1.25,
-      "output_price_usd_per_m": 10.0,
-      "input_price_cny_per_m": 8.4819,
-      "output_price_cny_per_m": 67.855,
-      "cached_input_price_usd_per_m": 0.125,
-      "cached_input_price_cny_per_m": 0.8482,
-      "context_window": 400000,
-      "max_output": 128000,
-      "modality": [
-        "text",
-        "vision"
+      "retired": false,
+      "knowledge_cutoff": "2026-02",
+      "quality_score": 59,
+      "source": "https://openai.com/api/pricing/",
+      "last_verified": "2026-08-01",
+      "price_tiers": [
+        {
+          "up_to_input_tokens": 272000,
+          "input_price_cny_per_m": 33.8245,
+          "output_price_cny_per_m": 202.947,
+          "cached_input_price_cny_per_m": 3.3825,
+          "input_price_orig_per_m": 5,
+          "output_price_orig_per_m": 30,
+          "cached_input_price_orig_per_m": 0.5
+        },
+        {
+          "up_to_input_tokens": null,
+          "input_price_cny_per_m": 67.649,
+          "output_price_cny_per_m": 304.4205,
+          "cached_input_price_cny_per_m": 6.7649,
+          "input_price_orig_per_m": 10,
+          "output_price_orig_per_m": 45,
+          "cached_input_price_orig_per_m": 1
+        }
       ],
-      "tags": [
-        "快速"
-      ],
-      "knowledge_cutoff": "2024-09"
+      "price_tiers_source": "https://openai.com/api/pricing/（2026-07-09 发布，2026-08-01 核对）",
+      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
     },
     {
       "id": "claude-opus-4-8",
@@ -87,12 +1726,12 @@
       "vendor_name": "Anthropic",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_usd_per_m": 5.0,
-      "output_price_usd_per_m": 25.0,
-      "input_price_cny_per_m": 33.9275,
-      "output_price_cny_per_m": 169.6375,
-      "cached_input_price_usd_per_m": 0.5,
-      "cached_input_price_cny_per_m": 3.3927,
+      "input_price_cny_per_m": 33.8245,
+      "output_price_cny_per_m": 169.1225,
+      "cached_input_price_cny_per_m": 3.3825,
+      "input_price_orig_per_m": 5,
+      "output_price_orig_per_m": 25,
+      "cached_input_price_orig_per_m": 0.5,
       "context_window": 1000000,
       "max_output": 64000,
       "modality": [
@@ -105,22 +1744,25 @@
         "推理",
         "上代旗舰"
       ],
+      "retired": false,
       "knowledge_cutoff": "2026-01",
-      "quality_score": 61
+      "quality_score": 61,
+      "source": "https://claude.com/pricing",
+      "last_verified": "2026-08-01"
     },
     {
-      "id": "claude-fable-5",
-      "name": "Claude Fable 5",
+      "id": "claude-opus-5",
+      "name": "Claude Opus 5",
       "vendor_id": "anthropic",
       "vendor_name": "Anthropic",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_usd_per_m": 10.0,
-      "output_price_usd_per_m": 50.0,
-      "input_price_cny_per_m": 67.855,
-      "output_price_cny_per_m": 339.275,
-      "cached_input_price_usd_per_m": 1.0,
-      "cached_input_price_cny_per_m": 6.7855,
+      "input_price_cny_per_m": 33.8245,
+      "output_price_cny_per_m": 169.1225,
+      "cached_input_price_cny_per_m": 3.3825,
+      "input_price_orig_per_m": 5,
+      "output_price_orig_per_m": 25,
+      "cached_input_price_orig_per_m": 0.5,
       "context_window": 1000000,
       "max_output": 128000,
       "modality": [
@@ -131,10 +1773,13 @@
         "旗舰",
         "推理",
         "代码",
-        "长上下文",
-        "新发布"
+        "长上下文"
       ],
-      "knowledge_cutoff": "2026-01"
+      "retired": false,
+      "knowledge_cutoff": "2026-05",
+      "quality_score": 61,
+      "source": "https://claude.com/pricing",
+      "last_verified": "2026-08-01"
     },
     {
       "id": "claude-opus-4-7",
@@ -143,12 +1788,12 @@
       "vendor_name": "Anthropic",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_usd_per_m": 5.0,
-      "output_price_usd_per_m": 25.0,
-      "input_price_cny_per_m": 33.9275,
-      "output_price_cny_per_m": 169.6375,
-      "cached_input_price_usd_per_m": 0.5,
-      "cached_input_price_cny_per_m": 3.3927,
+      "input_price_cny_per_m": 33.8245,
+      "output_price_cny_per_m": 169.1225,
+      "cached_input_price_cny_per_m": 3.3825,
+      "input_price_orig_per_m": 5,
+      "output_price_orig_per_m": 25,
+      "cached_input_price_orig_per_m": 0.5,
       "context_window": 1000000,
       "max_output": 64000,
       "modality": [
@@ -160,930 +1805,42 @@
         "代码",
         "上代"
       ],
+      "retired": false,
       "knowledge_cutoff": "2026-01",
-      "quality_score": 57
+      "quality_score": 57,
+      "source": "https://claude.com/pricing",
+      "last_verified": "2026-08-01"
     },
     {
-      "id": "claude-sonnet-4-6",
-      "name": "Claude Sonnet 4.6",
+      "id": "claude-fable-5",
+      "name": "Claude Fable 5",
       "vendor_id": "anthropic",
       "vendor_name": "Anthropic",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_usd_per_m": 3.0,
-      "output_price_usd_per_m": 15.0,
-      "input_price_cny_per_m": 20.3565,
-      "output_price_cny_per_m": 101.7825,
-      "cached_input_price_usd_per_m": 0.3,
-      "cached_input_price_cny_per_m": 2.0356,
+      "input_price_cny_per_m": 67.649,
+      "output_price_cny_per_m": 338.245,
+      "cached_input_price_cny_per_m": 6.7649,
+      "input_price_orig_per_m": 10,
+      "output_price_orig_per_m": 50,
+      "cached_input_price_orig_per_m": 1,
       "context_window": 1000000,
-      "max_output": 64000,
+      "max_output": 128000,
       "modality": [
         "text",
         "vision"
-      ],
-      "tags": [
-        "性价比",
-        "长上下文",
-        "代码"
-      ],
-      "knowledge_cutoff": "",
-      "quality_score": 52
-    },
-    {
-      "id": "claude-haiku-4-5",
-      "name": "Claude Haiku 4.5",
-      "vendor_id": "anthropic",
-      "vendor_name": "Anthropic",
-      "country": "US",
-      "billing_currency": "USD",
-      "input_price_usd_per_m": 1.0,
-      "output_price_usd_per_m": 5.0,
-      "input_price_cny_per_m": 6.7855,
-      "output_price_cny_per_m": 33.9275,
-      "cached_input_price_usd_per_m": 0.1,
-      "cached_input_price_cny_per_m": 0.6785,
-      "context_window": 200000,
-      "max_output": 32000,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "快速"
-      ],
-      "knowledge_cutoff": "",
-      "quality_score": 37
-    },
-    {
-      "id": "gemini-3-5-flash",
-      "name": "Gemini 3.5 Flash",
-      "vendor_id": "google",
-      "vendor_name": "Google",
-      "country": "US",
-      "billing_currency": "USD",
-      "input_price_usd_per_m": 1.5,
-      "output_price_usd_per_m": 9.0,
-      "input_price_cny_per_m": 10.1783,
-      "output_price_cny_per_m": 61.0695,
-      "cached_input_price_usd_per_m": 0.15,
-      "cached_input_price_cny_per_m": 1.0178,
-      "context_window": 1000000,
-      "max_output": 64000,
-      "modality": [
-        "text",
-        "vision",
-        "audio"
-      ],
-      "tags": [
-        "快速",
-        "多模态"
-      ],
-      "knowledge_cutoff": "",
-      "quality_score": 55
-    },
-    {
-      "id": "gemini-3-1-pro-preview",
-      "name": "Gemini 3.1 Pro Preview",
-      "vendor_id": "google",
-      "vendor_name": "Google",
-      "country": "US",
-      "billing_currency": "USD",
-      "input_price_usd_per_m": 2.0,
-      "output_price_usd_per_m": 12.0,
-      "input_price_cny_per_m": 13.571,
-      "output_price_cny_per_m": 81.426,
-      "cached_input_price_usd_per_m": 0.2,
-      "cached_input_price_cny_per_m": 1.3571,
-      "context_window": 2000000,
-      "max_output": 64000,
-      "modality": [
-        "text",
-        "vision",
-        "audio"
       ],
       "tags": [
         "旗舰",
-        "长上下文",
-        "多模态"
-      ],
-      "knowledge_cutoff": "2025-01",
-      "quality_score": 57
-    },
-    {
-      "id": "gemini-3-1-flash-lite",
-      "name": "Gemini 3.1 Flash-Lite",
-      "vendor_id": "google",
-      "vendor_name": "Google",
-      "country": "US",
-      "billing_currency": "USD",
-      "input_price_usd_per_m": 0.25,
-      "output_price_usd_per_m": 1.5,
-      "input_price_cny_per_m": 1.6964,
-      "output_price_cny_per_m": 10.1783,
-      "cached_input_price_usd_per_m": 0.025,
-      "cached_input_price_cny_per_m": 0.1696,
-      "context_window": 1000000,
-      "max_output": 64000,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "极便宜",
-        "快速"
-      ],
-      "knowledge_cutoff": "2025-01",
-      "quality_score": 34
-    },
-    {
-      "id": "gemini-2-5-pro",
-      "name": "Gemini 2.5 Pro",
-      "vendor_id": "google",
-      "vendor_name": "Google",
-      "country": "US",
-      "billing_currency": "USD",
-      "input_price_usd_per_m": 1.25,
-      "output_price_usd_per_m": 10.0,
-      "input_price_cny_per_m": 8.4819,
-      "output_price_cny_per_m": 67.855,
-      "cached_input_price_usd_per_m": 0.125,
-      "cached_input_price_cny_per_m": 0.8482,
-      "context_window": 2000000,
-      "max_output": 64000,
-      "modality": [
-        "text",
-        "vision",
-        "audio"
-      ],
-      "tags": [
+        "推理",
+        "代码",
         "长上下文"
       ],
-      "knowledge_cutoff": "",
-      "quality_score": 35
-    },
-    {
-      "id": "gemini-2-5-flash",
-      "name": "Gemini 2.5 Flash",
-      "vendor_id": "google",
-      "vendor_name": "Google",
-      "country": "US",
-      "billing_currency": "USD",
-      "input_price_usd_per_m": 0.3,
-      "output_price_usd_per_m": 2.5,
-      "input_price_cny_per_m": 2.0356,
-      "output_price_cny_per_m": 16.9638,
-      "cached_input_price_usd_per_m": 0.03,
-      "cached_input_price_cny_per_m": 0.2036,
-      "context_window": 1000000,
-      "max_output": 64000,
-      "modality": [
-        "text",
-        "vision",
-        "audio"
-      ],
-      "tags": [
-        "快速",
-        "性价比"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "gemini-2-5-flash-lite",
-      "name": "Gemini 2.5 Flash-Lite",
-      "vendor_id": "google",
-      "vendor_name": "Google",
-      "country": "US",
-      "billing_currency": "USD",
-      "input_price_usd_per_m": 0.1,
-      "output_price_usd_per_m": 0.4,
-      "input_price_cny_per_m": 0.6785,
-      "output_price_cny_per_m": 2.7142,
-      "cached_input_price_usd_per_m": 0.01,
-      "cached_input_price_cny_per_m": 0.0679,
-      "context_window": 1000000,
-      "max_output": 64000,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "极便宜",
-        "快速"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "deepseek-v4-flash",
-      "name": "DeepSeek V4 Flash",
-      "vendor_id": "deepseek",
-      "vendor_name": "DeepSeek",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.1474,
-      "output_price_usd_per_m": 0.2947,
-      "input_price_cny_per_m": 1.0,
-      "output_price_cny_per_m": 2.0,
-      "cached_input_price_usd_per_m": 0.0029,
-      "cached_input_price_cny_per_m": 0.02,
-      "context_window": 1000000,
-      "max_output": 384000,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "国产之光",
-        "极便宜",
-        "长上下文"
-      ],
-      "knowledge_cutoff": "",
-      "quality_score": 47
-    },
-    {
-      "id": "deepseek-v4-pro",
-      "name": "DeepSeek V4 Pro",
-      "vendor_id": "deepseek",
-      "vendor_name": "DeepSeek",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.4421,
-      "output_price_usd_per_m": 0.8842,
-      "input_price_cny_per_m": 3.0,
-      "output_price_cny_per_m": 6.0,
-      "cached_input_price_usd_per_m": 0.0037,
-      "cached_input_price_cny_per_m": 0.025,
-      "context_window": 1000000,
-      "max_output": 384000,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "旗舰",
-        "推理",
-        "长上下文"
-      ],
-      "knowledge_cutoff": "",
-      "quality_score": 52
-    },
-    {
-      "id": "deepseek-v3-2-legacy",
-      "name": "DeepSeek V3.2",
-      "vendor_id": "deepseek",
-      "vendor_name": "DeepSeek",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.2947,
-      "output_price_usd_per_m": 1.179,
-      "input_price_cny_per_m": 2.0,
-      "output_price_cny_per_m": 8.0,
-      "cached_input_price_usd_per_m": 0.0737,
-      "cached_input_price_cny_per_m": 0.5,
-      "context_window": 128000,
-      "max_output": 8192,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "即将弃用",
-        "2026-07-24 下线"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "grok-4-3",
-      "name": "Grok 4.3",
-      "vendor_id": "xai",
-      "vendor_name": "xAI",
-      "country": "US",
-      "billing_currency": "USD",
-      "input_price_usd_per_m": 1.25,
-      "output_price_usd_per_m": 2.5,
-      "input_price_cny_per_m": 8.4819,
-      "output_price_cny_per_m": 16.9638,
-      "cached_input_price_usd_per_m": 0.2,
-      "cached_input_price_cny_per_m": 1.3571,
-      "context_window": 1000000,
-      "max_output": 64000,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "旗舰",
-        "推理"
-      ],
-      "knowledge_cutoff": "2024-11",
-      "quality_score": 53
-    },
-    {
-      "id": "grok-build-0-1",
-      "name": "Grok Build 0.1",
-      "vendor_id": "xai",
-      "vendor_name": "xAI",
-      "country": "US",
-      "billing_currency": "USD",
-      "input_price_usd_per_m": 1.0,
-      "output_price_usd_per_m": 2.0,
-      "input_price_cny_per_m": 6.7855,
-      "output_price_cny_per_m": 13.571,
-      "cached_input_price_usd_per_m": 0.2,
-      "cached_input_price_cny_per_m": 1.3571,
-      "context_window": 256000,
-      "max_output": 64000,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "代码",
-        "快速"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "glm-5-1",
-      "name": "GLM-5.1",
-      "vendor_id": "zhipu",
-      "vendor_name": "智谱 AI",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.8842,
-      "output_price_usd_per_m": 3.537,
-      "input_price_cny_per_m": 6.0,
-      "output_price_cny_per_m": 24.0,
-      "cached_input_price_usd_per_m": 0.1916,
-      "cached_input_price_cny_per_m": 1.3,
-      "context_window": 200000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "旗舰",
-        "推理",
-        "新发布"
-      ],
-      "knowledge_cutoff": "",
-      "quality_score": 51
-    },
-    {
-      "id": "glm-5",
-      "name": "GLM-5",
-      "vendor_id": "zhipu",
-      "vendor_name": "智谱 AI",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.5895,
-      "output_price_usd_per_m": 2.6527,
-      "input_price_cny_per_m": 4.0,
-      "output_price_cny_per_m": 18.0,
-      "cached_input_price_usd_per_m": 0.1474,
-      "cached_input_price_cny_per_m": 1.0,
-      "context_window": 200000,
-      "max_output": 16384,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "旗舰"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "glm-4-7",
-      "name": "GLM-4.7",
-      "vendor_id": "zhipu",
-      "vendor_name": "智谱 AI",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.2947,
-      "output_price_usd_per_m": 1.179,
-      "input_price_cny_per_m": 2.0,
-      "output_price_cny_per_m": 8.0,
-      "cached_input_price_usd_per_m": 0.0589,
-      "cached_input_price_cny_per_m": 0.4,
-      "context_window": 200000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "性价比"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "kimi-k2-6",
-      "name": "Kimi K2.6",
-      "vendor_id": "moonshot",
-      "vendor_name": "Moonshot / Kimi",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.9579,
-      "output_price_usd_per_m": 3.9791,
-      "input_price_cny_per_m": 6.5,
-      "output_price_cny_per_m": 27.0,
-      "cached_input_price_usd_per_m": 0.1621,
-      "cached_input_price_cny_per_m": 1.1,
-      "context_window": 262144,
-      "max_output": 32000,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "旗舰",
-        "长上下文",
-        "Agent"
-      ],
-      "knowledge_cutoff": "",
-      "quality_score": 54
-    },
-    {
-      "id": "qwen3-7-max",
-      "name": "Qwen3.7 Max",
-      "vendor_id": "alibaba",
-      "vendor_name": "阿里通义",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 1.7685,
-      "output_price_usd_per_m": 5.3054,
-      "input_price_cny_per_m": 12.0,
-      "output_price_cny_per_m": 36.0,
-      "context_window": 1000000,
-      "max_output": 32000,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "旗舰",
-        "Agent",
-        "长上下文",
-        "新发布"
-      ],
-      "knowledge_cutoff": "",
-      "quality_score": 57
-    },
-    {
-      "id": "qwen3-max",
-      "name": "Qwen3 Max",
-      "vendor_id": "alibaba",
-      "vendor_name": "阿里通义",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.3684,
-      "output_price_usd_per_m": 1.4737,
-      "input_price_cny_per_m": 2.5,
-      "output_price_cny_per_m": 10.0,
-      "context_window": 131072,
-      "max_output": 32000,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "性价比"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "qwen3-5-plus",
-      "name": "Qwen3.5 Plus",
-      "vendor_id": "alibaba",
-      "vendor_name": "阿里通义",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.1179,
-      "output_price_usd_per_m": 0.7074,
-      "input_price_cny_per_m": 0.8,
-      "output_price_cny_per_m": 4.8,
-      "context_window": 131072,
-      "max_output": 32000,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "性价比",
-        "新发布"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "qwen3-5-flash",
-      "name": "Qwen3.5 Flash",
-      "vendor_id": "alibaba",
-      "vendor_name": "阿里通义",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.0295,
-      "output_price_usd_per_m": 0.2947,
-      "input_price_cny_per_m": 0.2,
-      "output_price_cny_per_m": 2.0,
-      "context_window": 131072,
-      "max_output": 16000,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "极便宜",
-        "快速"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "doubao-seed-2-1-pro",
-      "name": "Doubao Seed 2.1 Pro",
-      "vendor_id": "bytedance",
-      "vendor_name": "字节豆包",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.8842,
-      "output_price_usd_per_m": 4.4212,
-      "input_price_cny_per_m": 6.0,
-      "output_price_cny_per_m": 30.0,
-      "cached_input_price_usd_per_m": 0.1768,
-      "cached_input_price_cny_per_m": 1.2,
-      "context_window": 256000,
-      "max_output": 32000,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "旗舰",
-        "推理",
-        "新发布"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "doubao-1-6",
-      "name": "Doubao 1.6",
-      "vendor_id": "bytedance",
-      "vendor_name": "字节豆包",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.3537,
-      "output_price_usd_per_m": 3.537,
-      "input_price_cny_per_m": 2.4,
-      "output_price_cny_per_m": 24.0,
-      "context_window": 256000,
-      "max_output": 16000,
-      "modality": [
-        "text",
-        "vision",
-        "audio"
-      ],
-      "tags": [
-        "多模态",
-        "上代"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "doubao-1-5-pro",
-      "name": "Doubao 1.5 Pro",
-      "vendor_id": "bytedance",
-      "vendor_name": "字节豆包",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.1179,
-      "output_price_usd_per_m": 0.2947,
-      "input_price_cny_per_m": 0.8,
-      "output_price_cny_per_m": 2.0,
-      "cached_input_price_usd_per_m": 0.0236,
-      "cached_input_price_cny_per_m": 0.16,
-      "context_window": 256000,
-      "max_output": 12288,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "极便宜",
-        "上代"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "ernie-5-1",
-      "name": "文心 ERNIE 5.1",
-      "vendor_id": "baidu",
-      "vendor_name": "百度文心",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.5895,
-      "output_price_usd_per_m": 2.6527,
-      "input_price_cny_per_m": 4.0,
-      "output_price_cny_per_m": 18.0,
-      "context_window": 128000,
-      "max_output": 16384,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "旗舰"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "ernie-4-5-turbo",
-      "name": "文心 ERNIE 4.5 Turbo",
-      "vendor_id": "baidu",
-      "vendor_name": "百度文心",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.1179,
-      "output_price_usd_per_m": 0.4716,
-      "input_price_cny_per_m": 0.8,
-      "output_price_cny_per_m": 3.2,
-      "cached_input_price_usd_per_m": 0.0295,
-      "cached_input_price_cny_per_m": 0.2,
-      "context_window": 128000,
-      "max_output": 16384,
-      "modality": [
-        "text",
-        "vision"
-      ],
-      "tags": [
-        "性价比",
-        "快速"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "ernie-x1-turbo",
-      "name": "文心 ERNIE X1 Turbo",
-      "vendor_id": "baidu",
-      "vendor_name": "百度文心",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.1474,
-      "output_price_usd_per_m": 0.5895,
-      "input_price_cny_per_m": 1.0,
-      "output_price_cny_per_m": 4.0,
-      "context_window": 128000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "推理",
-        "深度思考"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "hunyuan-turbos",
-      "name": "混元 TurboS",
-      "vendor_id": "tencent",
-      "vendor_name": "腾讯混元",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.1179,
-      "output_price_usd_per_m": 0.2947,
-      "input_price_cny_per_m": 0.8,
-      "output_price_cny_per_m": 2.0,
-      "context_window": 256000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "性价比",
-        "快速"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "hunyuan-t1",
-      "name": "混元 T1",
-      "vendor_id": "tencent",
-      "vendor_name": "腾讯混元",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.1474,
-      "output_price_usd_per_m": 0.5895,
-      "input_price_cny_per_m": 1.0,
-      "output_price_cny_per_m": 4.0,
-      "context_window": 64000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "推理"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "hunyuan-2-0-think",
-      "name": "混元 2.0 Think",
-      "vendor_id": "tencent",
-      "vendor_name": "腾讯混元",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.5858,
-      "output_price_usd_per_m": 2.3432,
-      "input_price_cny_per_m": 3.975,
-      "output_price_cny_per_m": 15.9,
-      "context_window": 128000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "旗舰",
-        "推理"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "minimax-m3",
-      "name": "MiniMax M3",
-      "vendor_id": "minimax",
-      "vendor_name": "MiniMax",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.619,
-      "output_price_usd_per_m": 2.4759,
-      "input_price_cny_per_m": 4.2,
-      "output_price_cny_per_m": 16.8,
-      "cached_input_price_usd_per_m": 0.1238,
-      "cached_input_price_cny_per_m": 0.84,
-      "context_window": 1000000,
-      "max_output": 64000,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "Agent",
-        "代码",
-        "长上下文",
-        "旗舰"
-      ],
-      "knowledge_cutoff": "",
-      "quality_score": 55
-    },
-    {
-      "id": "minimax-m2-7",
-      "name": "MiniMax M2.7",
-      "vendor_id": "minimax",
-      "vendor_name": "MiniMax",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.3095,
-      "output_price_usd_per_m": 1.2379,
-      "input_price_cny_per_m": 2.1,
-      "output_price_cny_per_m": 8.4,
-      "cached_input_price_usd_per_m": 0.0619,
-      "cached_input_price_cny_per_m": 0.42,
-      "context_window": 1000000,
-      "max_output": 64000,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "Agent",
-        "代码",
-        "性价比"
-      ],
-      "knowledge_cutoff": "",
-      "quality_score": 50
-    },
-    {
-      "id": "spark-x2",
-      "name": "Spark X2",
-      "vendor_id": "xfyun",
-      "vendor_name": "讯飞星火",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.4421,
-      "output_price_usd_per_m": 0.4421,
-      "input_price_cny_per_m": 3.0,
-      "output_price_cny_per_m": 3.0,
-      "context_window": 200000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "旗舰",
-        "推理"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "spark-x2-flash",
-      "name": "Spark X2 Flash",
-      "vendor_id": "xfyun",
-      "vendor_name": "讯飞星火",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.2947,
-      "output_price_usd_per_m": 0.2947,
-      "input_price_cny_per_m": 2.0,
-      "output_price_cny_per_m": 2.0,
-      "context_window": 200000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "推理",
-        "快速",
-        "性价比"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "spark-ultra",
-      "name": "Spark Ultra",
-      "vendor_id": "xfyun",
-      "vendor_name": "讯飞星火",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.2947,
-      "output_price_usd_per_m": 0.2947,
-      "input_price_cny_per_m": 2.0,
-      "output_price_cny_per_m": 2.0,
-      "context_window": 128000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "性价比",
-        "FunctionCall"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "spark-pro",
-      "name": "Spark Pro",
-      "vendor_id": "xfyun",
-      "vendor_name": "讯飞星火",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 1.0316,
-      "output_price_usd_per_m": 1.0316,
-      "input_price_cny_per_m": 7.0,
-      "output_price_cny_per_m": 7.0,
-      "context_window": 128000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "强性能"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "baichuan-m3-plus",
-      "name": "Baichuan M3 Plus",
-      "vendor_id": "baichuan",
-      "vendor_name": "百川智能",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.7369,
-      "output_price_usd_per_m": 1.3264,
-      "input_price_cny_per_m": 5.0,
-      "output_price_cny_per_m": 9.0,
-      "context_window": 192000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "医疗",
-        "旗舰"
-      ],
-      "knowledge_cutoff": ""
-    },
-    {
-      "id": "baichuan-m2",
-      "name": "Baichuan M2",
-      "vendor_id": "baichuan",
-      "vendor_name": "百川智能",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_usd_per_m": 0.2947,
-      "output_price_usd_per_m": 2.9475,
-      "input_price_cny_per_m": 2.0,
-      "output_price_cny_per_m": 20.0,
-      "context_window": 192000,
-      "max_output": 16384,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "性价比"
-      ],
-      "knowledge_cutoff": ""
+      "retired": false,
+      "knowledge_cutoff": "2026-01",
+      "quality_score": 60,
+      "source": "https://claude.com/pricing",
+      "last_verified": "2026-08-01"
     }
   ]
 }

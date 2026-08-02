@@ -1,0 +1,48 @@
+name: Daily price sync
+
+# 每日从公开 API 同步定价数据。源是公开端点，故本工作流不需要任何 secret，
+# 也不需要访问私有的站点仓库。
+#
+# 为什么必须自动化：这份数据集对外声明「每日核对」，而在 2026-08-02 之前
+# 同步脚本写死了维护者本机的绝对路径，只能手工跑 —— 结果它整整 30 天没更新。
+# 声明与事实脱节是诚信面缺口，不是小事。
+
+on:
+  schedule:
+    # 每天 02:00 UTC = 10:00 北京时间。站点侧核价 cron 约 09:11 北京时间跑完，留出余量。
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 脚本只用标准库，无需装依赖。取数失败或数据不健全时退出码非 0，
+      # 此步直接失败 —— 宁可让工作流红着，也不要提交一份坏数据。
+      - name: Sync prices.json
+        run: python sync_prices.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- prices.json; then
+            echo "prices.json unchanged, nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add prices.json
+          git commit -m "data: daily price sync ($(date -u +%Y-%m-%d))"
+          git push
