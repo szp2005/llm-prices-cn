@@ -1,8 +1,8 @@
 {
-  "last_checked": "2026-08-16",
-  "last_updated": "2026-08-01",
-  "usd_to_cny_rate": 6.7606,
-  "usd_to_cny_updated": "2026-08-16",
+  "last_checked": "2026-08-17",
+  "last_updated": "2026-08-17",
+  "usd_to_cny_rate": 6.7487,
+  "usd_to_cny_updated": "2026-08-17",
   "pricing_unit": "per_million_tokens",
   "model_count": 55,
   "license": "CC-BY-4.0",
@@ -35,7 +35,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
-      "last_verified": "2026-08-16",
+      "last_verified": "2026-08-17",
       "price_tiers": [
         {
           "up_to_input_tokens": 128000,
@@ -75,9 +75,9 @@
       "vendor_name": "Google",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 0.6761,
-      "output_price_cny_per_m": 2.7042,
-      "cached_input_price_cny_per_m": 0.0676,
+      "input_price_cny_per_m": 0.6749,
+      "output_price_cny_per_m": 2.6995,
+      "cached_input_price_cny_per_m": 0.0675,
       "input_price_orig_per_m": 0.1,
       "output_price_orig_per_m": 0.4,
       "cached_input_price_orig_per_m": 0.01,
@@ -124,7 +124,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
-      "last_verified": "2026-08-16",
+      "last_verified": "2026-08-17",
       "price_tiers": [
         {
           "up_to_input_tokens": 128000,
@@ -305,35 +305,6 @@
       "last_verified": "2026-06-05"
     },
     {
-      "id": "deepseek-v4-flash",
-      "name": "DeepSeek V4 Flash",
-      "vendor_id": "deepseek",
-      "vendor_name": "DeepSeek",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_cny_per_m": 1,
-      "output_price_cny_per_m": 2,
-      "cached_input_price_cny_per_m": 0.02,
-      "input_price_orig_per_m": 1,
-      "output_price_orig_per_m": 2,
-      "cached_input_price_orig_per_m": 0.02,
-      "context_window": 1000000,
-      "max_output": 384000,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "国产之光",
-        "极便宜",
-        "长上下文"
-      ],
-      "retired": false,
-      "knowledge_cutoff": null,
-      "quality_score": 47,
-      "source": "https://api-docs.deepseek.com/quick_start/pricing",
-      "last_verified": "2026-08-16"
-    },
-    {
       "id": "ernie-x1-turbo",
       "name": "文心 ERNIE X1 Turbo",
       "vendor_id": "baidu",
@@ -444,6 +415,57 @@
       "last_verified": "2026-06-05"
     },
     {
+      "id": "gpt-5-6-luna",
+      "name": "GPT-5.6 Luna",
+      "vendor_id": "openai",
+      "vendor_name": "OpenAI",
+      "country": "US",
+      "billing_currency": "USD",
+      "input_price_cny_per_m": 1.3497,
+      "output_price_cny_per_m": 8.0984,
+      "cached_input_price_cny_per_m": 0.135,
+      "input_price_orig_per_m": 0.2,
+      "output_price_orig_per_m": 1.2,
+      "cached_input_price_orig_per_m": 0.02,
+      "context_window": 1050000,
+      "max_output": 128000,
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "tags": [
+        "快速",
+        "极便宜"
+      ],
+      "retired": false,
+      "knowledge_cutoff": "2026-02",
+      "quality_score": null,
+      "source": "https://openai.com/api/pricing/",
+      "last_verified": "2026-08-01",
+      "price_tiers": [
+        {
+          "up_to_input_tokens": 272000,
+          "input_price_cny_per_m": 1.3497,
+          "output_price_cny_per_m": 8.0984,
+          "cached_input_price_cny_per_m": 0.135,
+          "input_price_orig_per_m": 0.2,
+          "output_price_orig_per_m": 1.2,
+          "cached_input_price_orig_per_m": 0.02
+        },
+        {
+          "up_to_input_tokens": null,
+          "input_price_cny_per_m": 2.6995,
+          "output_price_cny_per_m": 12.1477,
+          "cached_input_price_cny_per_m": 0.2699,
+          "input_price_orig_per_m": 0.4,
+          "output_price_orig_per_m": 1.8,
+          "cached_input_price_orig_per_m": 0.04
+        }
+      ],
+      "price_tiers_source": "https://developers.openai.com/api/docs/pricing（2026-08-02 读取，降价后长上下文档）",
+      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
+    },
+    {
       "id": "step-3-7-flash",
       "name": "Step 3.7 Flash",
       "vendor_id": "stepfun",
@@ -471,55 +493,33 @@
       "last_verified": "2026-07-31"
     },
     {
-      "id": "gpt-5-6-luna",
-      "name": "GPT-5.6 Luna",
-      "vendor_id": "openai",
-      "vendor_name": "OpenAI",
-      "country": "US",
-      "billing_currency": "USD",
-      "input_price_cny_per_m": 1.3521,
-      "output_price_cny_per_m": 8.1127,
-      "cached_input_price_cny_per_m": 0.1352,
-      "input_price_orig_per_m": 0.2,
-      "output_price_orig_per_m": 1.2,
-      "cached_input_price_orig_per_m": 0.02,
-      "context_window": 1050000,
-      "max_output": 128000,
+      "id": "deepseek-v4-flash",
+      "name": "DeepSeek V4 Flash",
+      "vendor_id": "deepseek",
+      "vendor_name": "DeepSeek",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 1.5,
+      "output_price_cny_per_m": 4.5,
+      "cached_input_price_cny_per_m": 0.05,
+      "input_price_orig_per_m": 1.5,
+      "output_price_orig_per_m": 4.5,
+      "cached_input_price_orig_per_m": 0.05,
+      "context_window": 1000000,
+      "max_output": 384000,
       "modality": [
-        "text",
-        "vision"
+        "text"
       ],
       "tags": [
-        "快速",
-        "极便宜"
+        "国产之光",
+        "极便宜",
+        "长上下文"
       ],
       "retired": false,
-      "knowledge_cutoff": "2026-02",
-      "quality_score": null,
-      "source": "https://openai.com/api/pricing/",
-      "last_verified": "2026-08-01",
-      "price_tiers": [
-        {
-          "up_to_input_tokens": 272000,
-          "input_price_cny_per_m": 1.3521,
-          "output_price_cny_per_m": 8.1127,
-          "cached_input_price_cny_per_m": 0.1352,
-          "input_price_orig_per_m": 0.2,
-          "output_price_orig_per_m": 1.2,
-          "cached_input_price_orig_per_m": 0.02
-        },
-        {
-          "up_to_input_tokens": null,
-          "input_price_cny_per_m": 2.7042,
-          "output_price_cny_per_m": 12.1691,
-          "cached_input_price_cny_per_m": 0.2704,
-          "input_price_orig_per_m": 0.4,
-          "output_price_orig_per_m": 1.8,
-          "cached_input_price_orig_per_m": 0.04
-        }
-      ],
-      "price_tiers_source": "https://developers.openai.com/api/docs/pricing（2026-08-02 读取，降价后长上下文档）",
-      "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
+      "knowledge_cutoff": null,
+      "quality_score": 47,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "last_verified": "2026-08-17"
     },
     {
       "id": "gemini-3-1-flash-lite",
@@ -528,9 +528,9 @@
       "vendor_name": "Google",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 1.6902,
-      "output_price_cny_per_m": 10.1409,
-      "cached_input_price_cny_per_m": 0.169,
+      "input_price_cny_per_m": 1.6872,
+      "output_price_cny_per_m": 10.1231,
+      "cached_input_price_cny_per_m": 0.1687,
       "input_price_orig_per_m": 0.25,
       "output_price_orig_per_m": 1.5,
       "cached_input_price_orig_per_m": 0.025,
@@ -576,7 +576,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://api-docs.deepseek.com/quick_start/pricing",
-      "last_verified": "2026-08-16"
+      "last_verified": "2026-08-17"
     },
     {
       "id": "glm-4-7",
@@ -603,7 +603,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://open.bigmodel.cn/pricing",
-      "last_verified": "2026-08-16",
+      "last_verified": "2026-08-17",
       "price_tiers": [
         {
           "up_to_input_tokens": 32000,
@@ -718,9 +718,9 @@
       "vendor_name": "Google",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 2.0282,
-      "output_price_cny_per_m": 16.9015,
-      "cached_input_price_cny_per_m": 0.2028,
+      "input_price_cny_per_m": 2.0246,
+      "output_price_cny_per_m": 16.8718,
+      "cached_input_price_cny_per_m": 0.2025,
       "input_price_orig_per_m": 0.3,
       "output_price_orig_per_m": 2.5,
       "cached_input_price_orig_per_m": 0.03,
@@ -796,7 +796,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
-      "last_verified": "2026-08-16",
+      "last_verified": "2026-08-17",
       "price_tiers": [
         {
           "up_to_input_tokens": 32000,
@@ -828,35 +828,6 @@
       ],
       "price_tiers_source": "https://help.aliyun.com/zh/model-studio/model-pricing（官方页直读 2026-07-31）",
       "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
-    },
-    {
-      "id": "deepseek-v4-pro",
-      "name": "DeepSeek V4 Pro",
-      "vendor_id": "deepseek",
-      "vendor_name": "DeepSeek",
-      "country": "CN",
-      "billing_currency": "CNY",
-      "input_price_cny_per_m": 3,
-      "output_price_cny_per_m": 6,
-      "cached_input_price_cny_per_m": 0.025,
-      "input_price_orig_per_m": 3,
-      "output_price_orig_per_m": 6,
-      "cached_input_price_orig_per_m": 0.025,
-      "context_window": 1000000,
-      "max_output": 384000,
-      "modality": [
-        "text"
-      ],
-      "tags": [
-        "旗舰",
-        "推理",
-        "长上下文"
-      ],
-      "retired": false,
-      "knowledge_cutoff": null,
-      "quality_score": 52,
-      "source": "https://api-docs.deepseek.com/quick_start/pricing",
-      "last_verified": "2026-08-16"
     },
     {
       "id": "spark-x2",
@@ -940,7 +911,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://open.bigmodel.cn/pricing",
-      "last_verified": "2026-08-16",
+      "last_verified": "2026-08-17",
       "price_tiers": [
         {
           "up_to_input_tokens": 32000,
@@ -1067,6 +1038,35 @@
       "price_tiers_note": "Billed by the tier matching a single request's input token count; the whole request is charged at that tier. Base price above = first tier."
     },
     {
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
+      "vendor_id": "deepseek",
+      "vendor_name": "DeepSeek",
+      "country": "CN",
+      "billing_currency": "CNY",
+      "input_price_cny_per_m": 4.5,
+      "output_price_cny_per_m": 13.5,
+      "cached_input_price_cny_per_m": 0.15,
+      "input_price_orig_per_m": 4.5,
+      "output_price_orig_per_m": 13.5,
+      "cached_input_price_orig_per_m": 0.15,
+      "context_window": 1000000,
+      "max_output": 384000,
+      "modality": [
+        "text"
+      ],
+      "tags": [
+        "旗舰",
+        "推理",
+        "长上下文"
+      ],
+      "retired": false,
+      "knowledge_cutoff": null,
+      "quality_score": 52,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "last_verified": "2026-08-17"
+    },
+    {
       "id": "baichuan-m3-plus",
       "name": "Baichuan M3 Plus",
       "vendor_id": "baichuan",
@@ -1121,7 +1121,7 @@
       "knowledge_cutoff": null,
       "quality_score": 51,
       "source": "https://open.bigmodel.cn/pricing",
-      "last_verified": "2026-08-16",
+      "last_verified": "2026-08-17",
       "price_tiers": [
         {
           "up_to_input_tokens": 32000,
@@ -1203,7 +1203,7 @@
       "knowledge_cutoff": null,
       "quality_score": 54,
       "source": "https://platform.moonshot.cn/docs/pricing/chat",
-      "last_verified": "2026-08-16"
+      "last_verified": "2026-08-17"
     },
     {
       "id": "claude-haiku-4-5",
@@ -1212,9 +1212,9 @@
       "vendor_name": "Anthropic",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 6.7606,
-      "output_price_cny_per_m": 33.803,
-      "cached_input_price_cny_per_m": 0.6761,
+      "input_price_cny_per_m": 6.7487,
+      "output_price_cny_per_m": 33.7435,
+      "cached_input_price_cny_per_m": 0.6749,
       "input_price_orig_per_m": 1,
       "output_price_orig_per_m": 5,
       "cached_input_price_orig_per_m": 0.1,
@@ -1240,9 +1240,9 @@
       "vendor_name": "xAI",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 6.7606,
-      "output_price_cny_per_m": 13.5212,
-      "cached_input_price_cny_per_m": 1.3521,
+      "input_price_cny_per_m": 6.7487,
+      "output_price_cny_per_m": 13.4974,
+      "cached_input_price_cny_per_m": 1.3497,
       "input_price_orig_per_m": 1,
       "output_price_orig_per_m": 2,
       "cached_input_price_orig_per_m": 0.2,
@@ -1263,17 +1263,17 @@
       "price_tiers": [
         {
           "up_to_input_tokens": 200000,
-          "input_price_cny_per_m": 6.7606,
-          "output_price_cny_per_m": 13.5212,
-          "cached_input_price_cny_per_m": 1.3521,
+          "input_price_cny_per_m": 6.7487,
+          "output_price_cny_per_m": 13.4974,
+          "cached_input_price_cny_per_m": 1.3497,
           "input_price_orig_per_m": 1,
           "output_price_orig_per_m": 2,
           "cached_input_price_orig_per_m": 0.2
         },
         {
           "up_to_input_tokens": null,
-          "input_price_cny_per_m": 13.5212,
-          "output_price_cny_per_m": 27.0424,
+          "input_price_cny_per_m": 13.4974,
+          "output_price_cny_per_m": 26.9948,
           "cached_input_price_cny_per_m": null,
           "input_price_orig_per_m": 2,
           "output_price_orig_per_m": 4,
@@ -1336,7 +1336,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://open.bigmodel.cn/pricing",
-      "last_verified": "2026-08-16"
+      "last_verified": "2026-08-17"
     },
     {
       "id": "gpt-5-1",
@@ -1345,9 +1345,9 @@
       "vendor_name": "OpenAI",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 8.4508,
-      "output_price_cny_per_m": 67.606,
-      "cached_input_price_cny_per_m": 0.8451,
+      "input_price_cny_per_m": 8.4359,
+      "output_price_cny_per_m": 67.487,
+      "cached_input_price_cny_per_m": 0.8436,
       "input_price_orig_per_m": 1.25,
       "output_price_orig_per_m": 10,
       "cached_input_price_orig_per_m": 0.125,
@@ -1373,9 +1373,9 @@
       "vendor_name": "Google",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 8.4508,
-      "output_price_cny_per_m": 67.606,
-      "cached_input_price_cny_per_m": 0.8451,
+      "input_price_cny_per_m": 8.4359,
+      "output_price_cny_per_m": 67.487,
+      "cached_input_price_cny_per_m": 0.8436,
       "input_price_orig_per_m": 1.25,
       "output_price_orig_per_m": 10,
       "cached_input_price_orig_per_m": 0.125,
@@ -1397,18 +1397,18 @@
       "price_tiers": [
         {
           "up_to_input_tokens": 200000,
-          "input_price_cny_per_m": 8.4508,
-          "output_price_cny_per_m": 67.606,
-          "cached_input_price_cny_per_m": 0.8451,
+          "input_price_cny_per_m": 8.4359,
+          "output_price_cny_per_m": 67.487,
+          "cached_input_price_cny_per_m": 0.8436,
           "input_price_orig_per_m": 1.25,
           "output_price_orig_per_m": 10,
           "cached_input_price_orig_per_m": 0.125
         },
         {
           "up_to_input_tokens": null,
-          "input_price_cny_per_m": 16.9015,
-          "output_price_cny_per_m": 101.409,
-          "cached_input_price_cny_per_m": 1.6902,
+          "input_price_cny_per_m": 16.8718,
+          "output_price_cny_per_m": 101.2305,
+          "cached_input_price_cny_per_m": 1.6872,
           "input_price_orig_per_m": 2.5,
           "output_price_orig_per_m": 15,
           "cached_input_price_orig_per_m": 0.25
@@ -1424,9 +1424,9 @@
       "vendor_name": "xAI",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 8.4508,
-      "output_price_cny_per_m": 16.9015,
-      "cached_input_price_cny_per_m": 1.3521,
+      "input_price_cny_per_m": 8.4359,
+      "output_price_cny_per_m": 16.8718,
+      "cached_input_price_cny_per_m": 1.3497,
       "input_price_orig_per_m": 1.25,
       "output_price_orig_per_m": 2.5,
       "cached_input_price_orig_per_m": 0.2,
@@ -1448,18 +1448,18 @@
       "price_tiers": [
         {
           "up_to_input_tokens": 200000,
-          "input_price_cny_per_m": 8.4508,
-          "output_price_cny_per_m": 16.9015,
-          "cached_input_price_cny_per_m": 1.3521,
+          "input_price_cny_per_m": 8.4359,
+          "output_price_cny_per_m": 16.8718,
+          "cached_input_price_cny_per_m": 1.3497,
           "input_price_orig_per_m": 1.25,
           "output_price_orig_per_m": 2.5,
           "cached_input_price_orig_per_m": 0.2
         },
         {
           "up_to_input_tokens": null,
-          "input_price_cny_per_m": 16.9015,
-          "output_price_cny_per_m": 33.803,
-          "cached_input_price_cny_per_m": 2.7042,
+          "input_price_cny_per_m": 16.8718,
+          "output_price_cny_per_m": 33.7435,
+          "cached_input_price_cny_per_m": 2.6995,
           "input_price_orig_per_m": 2.5,
           "output_price_orig_per_m": 5,
           "cached_input_price_orig_per_m": 0.4
@@ -1475,9 +1475,9 @@
       "vendor_name": "Google",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 10.1409,
-      "output_price_cny_per_m": 50.7045,
-      "cached_input_price_cny_per_m": 1.0141,
+      "input_price_cny_per_m": 10.1231,
+      "output_price_cny_per_m": 50.6153,
+      "cached_input_price_cny_per_m": 1.0123,
       "input_price_orig_per_m": 1.5,
       "output_price_orig_per_m": 7.5,
       "cached_input_price_orig_per_m": 0.15,
@@ -1505,9 +1505,9 @@
       "vendor_name": "Google",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 10.1409,
-      "output_price_cny_per_m": 60.8454,
-      "cached_input_price_cny_per_m": 1.0141,
+      "input_price_cny_per_m": 10.1231,
+      "output_price_cny_per_m": 60.7383,
+      "cached_input_price_cny_per_m": 1.0123,
       "input_price_orig_per_m": 1.5,
       "output_price_orig_per_m": 9,
       "cached_input_price_orig_per_m": 0.15,
@@ -1558,7 +1558,7 @@
       "knowledge_cutoff": null,
       "quality_score": 57,
       "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
-      "last_verified": "2026-08-16"
+      "last_verified": "2026-08-17"
     },
     {
       "id": "gpt-5-6-terra",
@@ -1567,9 +1567,9 @@
       "vendor_name": "OpenAI",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 13.5212,
-      "output_price_cny_per_m": 81.1272,
-      "cached_input_price_cny_per_m": 1.3521,
+      "input_price_cny_per_m": 13.4974,
+      "output_price_cny_per_m": 80.9844,
+      "cached_input_price_cny_per_m": 1.3497,
       "input_price_orig_per_m": 2,
       "output_price_orig_per_m": 12,
       "cached_input_price_orig_per_m": 0.2,
@@ -1590,18 +1590,18 @@
       "price_tiers": [
         {
           "up_to_input_tokens": 272000,
-          "input_price_cny_per_m": 13.5212,
-          "output_price_cny_per_m": 81.1272,
-          "cached_input_price_cny_per_m": 1.3521,
+          "input_price_cny_per_m": 13.4974,
+          "output_price_cny_per_m": 80.9844,
+          "cached_input_price_cny_per_m": 1.3497,
           "input_price_orig_per_m": 2,
           "output_price_orig_per_m": 12,
           "cached_input_price_orig_per_m": 0.2
         },
         {
           "up_to_input_tokens": null,
-          "input_price_cny_per_m": 27.0424,
-          "output_price_cny_per_m": 121.6908,
-          "cached_input_price_cny_per_m": 2.7042,
+          "input_price_cny_per_m": 26.9948,
+          "output_price_cny_per_m": 121.4766,
+          "cached_input_price_cny_per_m": 2.6995,
           "input_price_orig_per_m": 4,
           "output_price_orig_per_m": 18,
           "cached_input_price_orig_per_m": 0.4
@@ -1617,9 +1617,9 @@
       "vendor_name": "Anthropic",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 13.5212,
-      "output_price_cny_per_m": 67.606,
-      "cached_input_price_cny_per_m": 1.3521,
+      "input_price_cny_per_m": 13.4974,
+      "output_price_cny_per_m": 67.487,
+      "cached_input_price_cny_per_m": 1.3497,
       "input_price_orig_per_m": 2,
       "output_price_orig_per_m": 10,
       "cached_input_price_orig_per_m": 0.2,
@@ -1647,9 +1647,9 @@
       "vendor_name": "Google",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 13.5212,
-      "output_price_cny_per_m": 81.1272,
-      "cached_input_price_cny_per_m": 1.3521,
+      "input_price_cny_per_m": 13.4974,
+      "output_price_cny_per_m": 80.9844,
+      "cached_input_price_cny_per_m": 1.3497,
       "input_price_orig_per_m": 2,
       "output_price_orig_per_m": 12,
       "cached_input_price_orig_per_m": 0.2,
@@ -1673,18 +1673,18 @@
       "price_tiers": [
         {
           "up_to_input_tokens": 200000,
-          "input_price_cny_per_m": 13.5212,
-          "output_price_cny_per_m": 81.1272,
-          "cached_input_price_cny_per_m": 1.3521,
+          "input_price_cny_per_m": 13.4974,
+          "output_price_cny_per_m": 80.9844,
+          "cached_input_price_cny_per_m": 1.3497,
           "input_price_orig_per_m": 2,
           "output_price_orig_per_m": 12,
           "cached_input_price_orig_per_m": 0.2
         },
         {
           "up_to_input_tokens": null,
-          "input_price_cny_per_m": 27.0424,
-          "output_price_cny_per_m": 121.6908,
-          "cached_input_price_cny_per_m": 2.7042,
+          "input_price_cny_per_m": 26.9948,
+          "output_price_cny_per_m": 121.4766,
+          "cached_input_price_cny_per_m": 2.6995,
           "input_price_orig_per_m": 4,
           "output_price_orig_per_m": 18,
           "cached_input_price_orig_per_m": 0.4
@@ -1700,9 +1700,9 @@
       "vendor_name": "OpenAI",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 16.9015,
-      "output_price_cny_per_m": 101.409,
-      "cached_input_price_cny_per_m": 1.6902,
+      "input_price_cny_per_m": 16.8718,
+      "output_price_cny_per_m": 101.2305,
+      "cached_input_price_cny_per_m": 1.6872,
       "input_price_orig_per_m": 2.5,
       "output_price_orig_per_m": 15,
       "cached_input_price_orig_per_m": 0.25,
@@ -1723,18 +1723,18 @@
       "price_tiers": [
         {
           "up_to_input_tokens": 272000,
-          "input_price_cny_per_m": 16.9015,
-          "output_price_cny_per_m": 101.409,
-          "cached_input_price_cny_per_m": 1.6902,
+          "input_price_cny_per_m": 16.8718,
+          "output_price_cny_per_m": 101.2305,
+          "cached_input_price_cny_per_m": 1.6872,
           "input_price_orig_per_m": 2.5,
           "output_price_orig_per_m": 15,
           "cached_input_price_orig_per_m": 0.25
         },
         {
           "up_to_input_tokens": null,
-          "input_price_cny_per_m": 33.803,
-          "output_price_cny_per_m": 152.1135,
-          "cached_input_price_cny_per_m": 3.3803,
+          "input_price_cny_per_m": 33.7435,
+          "output_price_cny_per_m": 151.8458,
+          "cached_input_price_cny_per_m": 3.3744,
           "input_price_orig_per_m": 5,
           "output_price_orig_per_m": 22.5,
           "cached_input_price_orig_per_m": 0.5
@@ -1770,7 +1770,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://platform.moonshot.cn/docs/pricing/chat",
-      "last_verified": "2026-08-16"
+      "last_verified": "2026-08-17"
     },
     {
       "id": "claude-sonnet-4-6",
@@ -1779,9 +1779,9 @@
       "vendor_name": "Anthropic",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 20.2818,
-      "output_price_cny_per_m": 101.409,
-      "cached_input_price_cny_per_m": 2.0282,
+      "input_price_cny_per_m": 20.2461,
+      "output_price_cny_per_m": 101.2305,
+      "cached_input_price_cny_per_m": 2.0246,
       "input_price_orig_per_m": 3,
       "output_price_orig_per_m": 15,
       "cached_input_price_orig_per_m": 0.3,
@@ -1809,9 +1809,9 @@
       "vendor_name": "OpenAI",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 33.803,
-      "output_price_cny_per_m": 202.818,
-      "cached_input_price_cny_per_m": 3.3803,
+      "input_price_cny_per_m": 33.7435,
+      "output_price_cny_per_m": 202.461,
+      "cached_input_price_cny_per_m": 3.3744,
       "input_price_orig_per_m": 5,
       "output_price_orig_per_m": 30,
       "cached_input_price_orig_per_m": 0.5,
@@ -1833,18 +1833,18 @@
       "price_tiers": [
         {
           "up_to_input_tokens": 272000,
-          "input_price_cny_per_m": 33.803,
-          "output_price_cny_per_m": 202.818,
-          "cached_input_price_cny_per_m": 3.3803,
+          "input_price_cny_per_m": 33.7435,
+          "output_price_cny_per_m": 202.461,
+          "cached_input_price_cny_per_m": 3.3744,
           "input_price_orig_per_m": 5,
           "output_price_orig_per_m": 30,
           "cached_input_price_orig_per_m": 0.5
         },
         {
           "up_to_input_tokens": null,
-          "input_price_cny_per_m": 67.606,
-          "output_price_cny_per_m": 304.227,
-          "cached_input_price_cny_per_m": 6.7606,
+          "input_price_cny_per_m": 67.487,
+          "output_price_cny_per_m": 303.6915,
+          "cached_input_price_cny_per_m": 6.7487,
           "input_price_orig_per_m": 10,
           "output_price_orig_per_m": 45,
           "cached_input_price_orig_per_m": 1
@@ -1860,9 +1860,9 @@
       "vendor_name": "OpenAI",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 33.803,
-      "output_price_cny_per_m": 202.818,
-      "cached_input_price_cny_per_m": 3.3803,
+      "input_price_cny_per_m": 33.7435,
+      "output_price_cny_per_m": 202.461,
+      "cached_input_price_cny_per_m": 3.3744,
       "input_price_orig_per_m": 5,
       "output_price_orig_per_m": 30,
       "cached_input_price_orig_per_m": 0.5,
@@ -1884,18 +1884,18 @@
       "price_tiers": [
         {
           "up_to_input_tokens": 272000,
-          "input_price_cny_per_m": 33.803,
-          "output_price_cny_per_m": 202.818,
-          "cached_input_price_cny_per_m": 3.3803,
+          "input_price_cny_per_m": 33.7435,
+          "output_price_cny_per_m": 202.461,
+          "cached_input_price_cny_per_m": 3.3744,
           "input_price_orig_per_m": 5,
           "output_price_orig_per_m": 30,
           "cached_input_price_orig_per_m": 0.5
         },
         {
           "up_to_input_tokens": null,
-          "input_price_cny_per_m": 67.606,
-          "output_price_cny_per_m": 304.227,
-          "cached_input_price_cny_per_m": 6.7606,
+          "input_price_cny_per_m": 67.487,
+          "output_price_cny_per_m": 303.6915,
+          "cached_input_price_cny_per_m": 6.7487,
           "input_price_orig_per_m": 10,
           "output_price_orig_per_m": 45,
           "cached_input_price_orig_per_m": 1
@@ -1911,9 +1911,9 @@
       "vendor_name": "Anthropic",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 33.803,
-      "output_price_cny_per_m": 169.015,
-      "cached_input_price_cny_per_m": 3.3803,
+      "input_price_cny_per_m": 33.7435,
+      "output_price_cny_per_m": 168.7175,
+      "cached_input_price_cny_per_m": 3.3744,
       "input_price_orig_per_m": 5,
       "output_price_orig_per_m": 25,
       "cached_input_price_orig_per_m": 0.5,
@@ -1942,9 +1942,9 @@
       "vendor_name": "Anthropic",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 33.803,
-      "output_price_cny_per_m": 169.015,
-      "cached_input_price_cny_per_m": 3.3803,
+      "input_price_cny_per_m": 33.7435,
+      "output_price_cny_per_m": 168.7175,
+      "cached_input_price_cny_per_m": 3.3744,
       "input_price_orig_per_m": 5,
       "output_price_orig_per_m": 25,
       "cached_input_price_orig_per_m": 0.5,
@@ -1973,9 +1973,9 @@
       "vendor_name": "Anthropic",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 33.803,
-      "output_price_cny_per_m": 169.015,
-      "cached_input_price_cny_per_m": 3.3803,
+      "input_price_cny_per_m": 33.7435,
+      "output_price_cny_per_m": 168.7175,
+      "cached_input_price_cny_per_m": 3.3744,
       "input_price_orig_per_m": 5,
       "output_price_orig_per_m": 25,
       "cached_input_price_orig_per_m": 0.5,
@@ -2003,9 +2003,9 @@
       "vendor_name": "Anthropic",
       "country": "US",
       "billing_currency": "USD",
-      "input_price_cny_per_m": 67.606,
-      "output_price_cny_per_m": 338.03,
-      "cached_input_price_cny_per_m": 6.7606,
+      "input_price_cny_per_m": 67.487,
+      "output_price_cny_per_m": 337.435,
+      "cached_input_price_cny_per_m": 6.7487,
       "input_price_orig_per_m": 10,
       "output_price_orig_per_m": 50,
       "cached_input_price_orig_per_m": 1,
