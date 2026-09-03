@@ -602,7 +602,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://open.bigmodel.cn/pricing",
-      "last_verified": "2026-09-02",
+      "last_verified": "2026-09-03",
       "price_tiers": [
         {
           "up_to_input_tokens": 32000,
@@ -963,7 +963,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://open.bigmodel.cn/pricing",
-      "last_verified": "2026-09-02",
+      "last_verified": "2026-09-03",
       "price_tiers": [
         {
           "up_to_input_tokens": 32000,
@@ -1182,7 +1182,7 @@
       "knowledge_cutoff": null,
       "quality_score": 51,
       "source": "https://open.bigmodel.cn/pricing",
-      "last_verified": "2026-09-02",
+      "last_verified": "2026-09-03",
       "price_tiers": [
         {
           "up_to_input_tokens": 32000,
@@ -1264,7 +1264,7 @@
       "knowledge_cutoff": null,
       "quality_score": 54,
       "source": "https://platform.moonshot.cn/docs/pricing/chat",
-      "last_verified": "2026-09-02"
+      "last_verified": "2026-09-03"
     },
     {
       "id": "claude-haiku-4-5",
@@ -1370,7 +1370,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://open.bigmodel.cn/pricing",
-      "last_verified": "2026-09-02"
+      "last_verified": "2026-09-03"
     },
     {
       "id": "gpt-5-1",
@@ -1803,7 +1803,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://platform.moonshot.cn/docs/pricing/chat",
-      "last_verified": "2026-09-02"
+      "last_verified": "2026-09-03"
     },
     {
       "id": "claude-sonnet-4-6",
