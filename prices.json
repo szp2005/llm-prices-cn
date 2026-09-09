@@ -35,7 +35,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
-      "last_verified": "2026-09-08",
+      "last_verified": "2026-09-09",
       "price_tiers": [
         {
           "up_to_input_tokens": 128000,
@@ -124,7 +124,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
-      "last_verified": "2026-09-08",
+      "last_verified": "2026-09-09",
       "price_tiers": [
         {
           "up_to_input_tokens": 128000,
@@ -708,7 +708,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://platform.baichuan-ai.com/prices",
-      "last_verified": "2026-09-08"
+      "last_verified": "2026-09-09"
     },
     {
       "id": "gemini-2-5-flash",
@@ -768,7 +768,7 @@
       "knowledge_cutoff": null,
       "quality_score": 55,
       "source": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
-      "last_verified": "2026-09-08",
+      "last_verified": "2026-09-09",
       "price_tiers": [
         {
           "up_to_input_tokens": 512000,
@@ -819,7 +819,7 @@
       "knowledge_cutoff": null,
       "quality_score": 50,
       "source": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
-      "last_verified": "2026-09-08"
+      "last_verified": "2026-09-09"
     },
     {
       "id": "qwen3-max",
@@ -847,7 +847,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
-      "last_verified": "2026-09-08",
+      "last_verified": "2026-09-09",
       "price_tiers": [
         {
           "up_to_input_tokens": 32000,
@@ -1090,7 +1090,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://platform.baichuan-ai.com/prices",
-      "last_verified": "2026-09-08"
+      "last_verified": "2026-09-09"
     },
     {
       "id": "gemini-3-7-flash",
@@ -1264,7 +1264,7 @@
       "knowledge_cutoff": null,
       "quality_score": 54,
       "source": "https://platform.moonshot.cn/docs/pricing/chat",
-      "last_verified": "2026-09-08"
+      "last_verified": "2026-09-09"
     },
     {
       "id": "claude-haiku-4-5",
@@ -1591,7 +1591,7 @@
       "knowledge_cutoff": null,
       "quality_score": 57,
       "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
-      "last_verified": "2026-09-08"
+      "last_verified": "2026-09-09"
     },
     {
       "id": "gpt-5-6-terra",
@@ -1803,7 +1803,7 @@
       "knowledge_cutoff": null,
       "quality_score": null,
       "source": "https://platform.moonshot.cn/docs/pricing/chat",
-      "last_verified": "2026-09-08"
+      "last_verified": "2026-09-09"
     },
     {
       "id": "claude-sonnet-4-6",
