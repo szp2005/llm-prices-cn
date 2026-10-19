@@ -1,6 +1,14 @@
 # LLM API Pricing Dataset (每日 LLM API 价格数据集)
 
-[English](#english) | [中文](#中文)
+[![Official Website](https://img.shields.io/badge/Official_Website-llmabacus.com-10b981?style=flat-square)](https://llmabacus.com)
+[![Live Calculator](https://img.shields.io/badge/Live_Pricing_Matrix-Open_App-6366f1?style=flat-square)](https://llmabacus.com)
+[![npm version](https://img.shields.io/npm/v/llm-pricing-calc.svg?style=flat-square)](https://www.npmjs.com/package/llm-pricing-calc)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
+
+> 🚀 **Interactive Tool & Live Matrix**:  
+> For real-time multi-region price comparisons, prompt caching discounts, and interactive cost calculators, visit the official web application: [**https://llmabacus.com**](https://llmabacus.com).
+
+[English](#english) | [中文](#中文) | [NPM Package](#npm-package)
 
 ---
 
@@ -8,8 +16,8 @@
 
 ### 1. Introduction
 This repository provides a daily-verified pricing dataset of popular Large Language Model (LLM) APIs, tracking both Chinese and global model providers.
-- **Official Website**: [LLM Abacus](https://llmabacus.com) (An interactive LLM API price comparison and cost estimation tool)
-- **Coverage**: 44 models from major vendors (including OpenAI, Anthropic, Google, DeepSeek, Alibaba, ByteDance, Baidu, Tencent, MiniMax, etc.)
+- **Official Website**: [LLM Abacus (算盘)](https://llmabacus.com) (An interactive LLM API price comparison and cost estimation tool)
+- **Coverage**: 50+ models from major vendors (including OpenAI, Anthropic, Google, DeepSeek, Alibaba, ByteDance, Baidu, Tencent, MiniMax, etc.)
 - **Frequency**: Checked daily to ensure up-to-date accuracy.
 
 ### 2. License & Attribution (CC-BY-4.0)
@@ -108,6 +116,30 @@ python3 sync_prices.py
 ```bash
 python3 sync_prices.py
 ```
+
+## NPM Package (`llm-pricing-calc`)
+
+Prefer using this dataset programmatically in Node.js / TypeScript projects? Install our lightweight, zero-dependency NPM package:
+
+```bash
+npm install llm-pricing-calc
+```
+
+```javascript
+import { calculateCost, compareCosts } from "llm-pricing-calc";
+
+// Calculate cost for DeepSeek with Prompt Caching
+const result = calculateCost({
+  modelId: "deepseek-v4-flash",
+  inputTokens: 100_000,
+  cachedInputTokens: 50_000,
+  outputTokens: 20_000,
+  currency: "USD",
+});
+
+console.log(result.formatted.total); // e.g. $0.041000
+```
+Full documentation & live demo: [https://llmabacus.com](https://llmabacus.com)
 
 ## MCP Server / MCP 服务
 
