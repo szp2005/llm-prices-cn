@@ -160,3 +160,12 @@ pip install -r requirements.txt && python server.py
 ```
 
 Tools: `list_llm_prices(vendor?, currency?)`, `estimate_cost(model_id, input_tokens, output_tokens, currency?)`.
+
+---
+
+## Interactive Calculators, Guides & Developer Utilities
+
+- 🧮 **LLM Token & Cost Calculator (Hugging Face Space)**: [https://huggingface.co/spaces/szp2005/llm-cost-calculator](https://huggingface.co/spaces/szp2005/llm-cost-calculator) ([Direct App](https://szp2005-llm-cost-calculator.static.hf.space))
+- 📖 **2026 LLM API Pricing & Hidden Cost Pitfalls Guide (Notion)**: [https://blush-surfboard-20a.notion.site/2026-API-41001f8845cc80fcbcbffd5b240431f3](https://blush-surfboard-20a.notion.site/2026-API-41001f8845cc80fcbcbffd5b240431f3)
+- 🛡️ **API Endpoint & Proxy Network Purity Audit (IPOK)**: [https://ipok.io](https://ipok.io) | [Hugging Face Space (`szp2005/ip-purity-checker`)](https://huggingface.co/spaces/szp2005/ip-purity-checker) | [2026 Multi-Source IP Consensus Whitepaper](https://blush-surfboard-20a.notion.site/2026-IP-41001f8845cc80efbba0dbe3aea9c5c1) | [Chrome Extension](https://chromewebstore.google.com/detail/ipok-ip-check-multi-sourc/jnbkfmgldcchpdgnegafakbcnmkdhiai)
+- ✂️ **AI Background Remover & Alpha Matte Inspector (Koutuxia)**: [https://koutuxia.com](https://koutuxia.com) | [Hugging Face Space (`szp2005/background-remover-local`)](https://huggingface.co/spaces/szp2005/background-remover-local)
